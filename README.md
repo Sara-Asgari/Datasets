@@ -1,4 +1,6 @@
 # Benchmark Datasets for Worm Propagation Studies
+We generated two categories of datasets, each of which contains several sets of traffic traces. the simulated worms are Slammer, Code Red I, Code Red II, and modified versions of them. these datasets have been generated in two different networks with different background traffic. for more details on how we generated these datasets, worm parameters, infection network parameters, and so on, see [our](http://ijict.itrc.ac.ir/browse.php?a_code=A-10-3560-1&sid=1&slc_lang=en&ftxt=1&pure_pdf=1) [papers](https://ieeexplore.ieee.org/document/9345845).<br />
+each directory contains a traffic trace in pcap format as well as the worm propagation path. The mappings between hostnames and IPs are also available in IPs.txt files.
 
 ## Citations
 if you find our datasets useful for your research, please cite our papers:<br />
