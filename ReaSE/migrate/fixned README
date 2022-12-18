@@ -1,0 +1,19 @@
+das python script konvertiert eine alte rease topo zum neuen omnet4 format
+
+es werden channels, properties und gates gefixt, außerdem das layout berichtigt mittels dem omnet nedtool
+
+alles was noch von hand gemacht werden muss sind die imports und der package name
+
+die meisten rease topos laufen mit den imports:
+import inet.nodes.inet.Router;
+import rease.nodes.inet.InetUserHost;
+import rease.nodes.inet.BackupServer;
+import rease.nodes.inet.NameServer;
+import rease.nodes.inet.InteractiveServer;
+import rease.nodes.inet.MailServer;
+import rease.nodes.inet.WebServer;
+import rease.nodes.inet.StreamingServer;
+import rease.nodes.inet.TraceRouter;
+import rease.base.ConnectionManager;
+import rease.base.TrafficProfileManager;
+import rease.networklayer.autorouting.TGMNetworkConfigurator;

@@ -1,0 +1,18 @@
+diff -crB INET//src/networklayer/ipv4/IP.cc INET_patched//src/networklayer/ipv4/IP.cc
+*** INET//src/networklayer/ipv4/IP.cc	2009-03-25 11:43:40.000000000 +0100
+--- INET_patched//src/networklayer/ipv4/IP.cc	2009-05-08 13:01:07.000000000 +0200
+***************
+*** 402,407 ****
+--- 402,413 ----
+      else
+      {
+          int gateindex = mapping.getOutputGateForProtocol(protocol);
++ 		if (! gate("transportOut", gateindex)->getNextGate()->isConnected()) {
++ 			IPControlInfo *controlInfo = check_and_cast<IPControlInfo*>(packet->removeControlInfo());
++ 			EV << "transport layer for received packet does not exist, sending ICMP_DESTINATION_UNREACHABLE\n";
++ 			icmpAccess.get()->sendErrorMessage(packet, controlInfo, ICMP_DESTINATION_UNREACHABLE, ICMP_DU_PROTOCOL_UNREACHABLE);
++ 			return;
++ 		}
+          send(packet, "transportOut", gateindex);
+      }
+  }
