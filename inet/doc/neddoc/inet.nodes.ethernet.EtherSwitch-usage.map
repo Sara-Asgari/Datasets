@@ -1,0 +1,10 @@
+<area shape="rect" href="inet.nodes.ethernet.EtherSwitch.html" title="Compound Module EtherSwitch" alt="" coords="299,80,389,107">
+<area shape="rect" href="inet.linklayer.ethernet.EtherMAC.html" title="Simple Module EtherMAC" alt="" coords="245,155,325,181">
+<area shape="rect" href="inet.linklayer.etherswitch.MACRelayUnit.html" title="Module Interface MACRelayUnit" alt="" coords="349,155,456,181">
+<area shape="rect" href="inet.examples.ethernet.arptest.ARPTest.html" title="Network ARPTest" alt="" coords="5,5,77,32">
+<area shape="rect" href="inet.examples.ethernet.lans.LargeLAN.html" title="Compound Module LargeLAN" alt="" coords="101,5,179,32">
+<area shape="rect" href="inet.examples.ethernet.lans.LargeNet.html" title="Network LargeNet" alt="" coords="203,5,275,32">
+<area shape="rect" href="inet.examples.ethernet.lans.MediumLAN.html" title="Compound Module MediumLAN" alt="" coords="299,5,389,32">
+<area shape="rect" href="inet.examples.ethernet.lans.MixedLAN.html" title="Network MixedLAN" alt="" coords="413,5,493,32">
+<area shape="rect" href="inet.examples.ethernet.lans.SwitchedLAN.html" title="Network SwitchedLAN" alt="" coords="517,5,616,32">
+<area shape="rect" href="inet.examples.emulation.traceroute.Traceroute.html" title="Network Traceroute" alt="" coords="640,5,723,32">

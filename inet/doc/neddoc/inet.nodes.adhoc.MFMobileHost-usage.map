@@ -1,0 +1,14 @@
+<area shape="rect" href="inet.nodes.adhoc.MFMobileHost.html" title="Compound Module MFMobileHost" alt="" coords="604,80,708,107">
+<area shape="rect" href="inet.mobility.BasicMobility.html" title="Module Interface BasicMobility" alt="" coords="5,155,104,181">
+<area shape="rect" href="inet.applications.pingapp.PingApp.html" title="Simple Module PingApp" alt="" coords="128,155,200,181">
+<area shape="rect" href="inet.networklayer.common.InterfaceTable.html" title="Simple Module InterfaceTable" alt="" coords="224,155,323,181">
+<area shape="rect" href="inet.linklayer.mf80211.Nic80211.html" title="Compound Module Nic80211" alt="" coords="347,155,421,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="445,155,541,181">
+<area shape="rect" href="inet.transport.udp.UDP.html" title="Simple Module UDP" alt="" coords="565,155,637,181">
+<area shape="rect" href="inet.nodes.inet.NetworkLayer.html" title="Compound Module NetworkLayer" alt="" coords="661,155,760,181">
+<area shape="rect" href="inet.applications.udpapp.UDPApp.html" title="Module Interface UDPApp" alt="" coords="784,155,856,181">
+<area shape="rect" href="inet.networklayer.ipv4.RoutingTable.html" title="Simple Module RoutingTable" alt="" coords="880,155,976,181">
+<area shape="rect" href="inet.transport.tcp.TCP.html" title="Simple Module TCP" alt="" coords="1000,155,1072,181">
+<area shape="rect" href="inet.applications.tcpapp.TCPApp.html" title="Module Interface TCPApp" alt="" coords="1096,155,1168,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="1192,155,1312,181">
+<area shape="rect" href="inet.examples.adhoc.mf80211.Net80211.html" title="Network Net80211" alt="" coords="619,5,693,32">

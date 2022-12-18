@@ -1,0 +1,5 @@
+<area shape="rect" href="inet.transport.rtp.RTPLayer.html" title="Compound Module RTPLayer" alt="" coords="123,80,200,107">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="5,155,101,181">
+<area shape="rect" href="inet.transport.rtp.RTCP.html" title="Simple Module RTCP" alt="" coords="125,155,197,181">
+<area shape="rect" href="inet.transport.rtp.RTP.html" title="Simple Module RTP" alt="" coords="221,155,293,181">
+<area shape="rect" href="inet.transport.rtp.RTPHost.html" title="Compound Module RTPHost" alt="" coords="125,5,197,32">

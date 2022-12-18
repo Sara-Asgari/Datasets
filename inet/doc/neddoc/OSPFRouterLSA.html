@@ -1,0 +1,109 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>OSPFRouterLSA</i></h2>
+<b>File: <a href="src-networklayer-ospfv2-OSPFPacket.msg.html">src/networklayer/ospfv2/OSPFPacket.msg</a></b><br/><p><a href="../doxy/class_o_s_p_f_router_l_s_a.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Represents an OSPF <a href="inet.nodes.inet.Router.html">Router</a> LSA</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFRouterLSA-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="OSPFRouterLSA.html" title="Class OSPFRouterLSA" alt="" coords="43,80,163,107">
+<area shape="rect" href="Link.html" title="Class Link" alt="" coords="67,155,139,181">
+<area shape="rect" href="OSPFLinkStateUpdatePacket.html" title="Packet OSPFLinkStateUpdatePacket" alt="" coords="5,5,200,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFRouterLSA-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="OSPFRouterLSA.html" title="Class OSPFRouterLSA" alt="" coords="5,80,125,107">
+<area shape="rect" href="OSPFLSA.html" title="Class OSPFLSA" alt="" coords="24,5,107,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="OSPFLSA.html">OSPFLSA</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>common ancestor type for all LSAs</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">E_ASBoundaryRouter</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">V_VirtualLinkEndpoint</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">numberOfLinks</td>
+   <td width="100">
+      <i>
+unsigned short</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">links</td>
+   <td width="100">
+      <i>
+Link[]</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">B_AreaBorderRouter</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">header</td>
+   <td width="100">
+      <i>
+OSPFLSAHeader</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Represents an OSPF Router LSA
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFRouterLSA</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFLSA</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">V_VirtualLinkEndpoint</span><span style="color: #000000; "> = </span><span style="color: #008000; ">false</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">E_ASBoundaryRouter</span><span style="color: #000000; "> = </span><span style="color: #008000; ">false</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">B_AreaBorderRouter</span><span style="color: #000000; "> = </span><span style="color: #008000; ">false</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">short</span><span style="color: #000000; "> </span><span style="color: #000000; ">numberOfLinks</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">Link</span><span style="color: #000000; "> </span><span style="color: #000000; ">links</span><span style="color: #000000; ">[];
+}
+
+</span></pre>
+   </body>
+</html>

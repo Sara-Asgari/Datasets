@@ -1,0 +1,338 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Compound Module <i>Ieee80211NicAP</i></h2>
+<b>Package:</b> inet.linklayer.ieee80211<br/><b>File: <a href="src-linklayer-ieee80211-Ieee80211NicAP.ned.html">src/linklayer/ieee80211/Ieee80211NicAP.ned</a></b><br/>
+<p>This NIC implements an 802.11 network interface card,
+in an AP, using infrastructure mode.</p>
+<img src="inet.linklayer.ieee80211.Ieee80211NicAP-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtAP.html" title="Ieee80211MgmtAP" alt="Ieee80211MgmtAP" coords="78,91,129,152">
+<area shape="rect" href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html" title="Ieee80211Mac" alt="Ieee80211Mac" coords="78,177,122,238">
+<area shape="rect" href="inet.linklayer.radio.Ieee80211Radio.html" title="Ieee80211Radio" alt="Ieee80211Radio" coords="78,262,122,323">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.linklayer.ieee80211.Ieee80211NicAP-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicAP.html" title="Compound Module Ieee80211NicAP" alt="" coords="200,80,315,107">
+<area shape="rect" href="inet.linklayer.radio.Ieee80211Radio.html" title="Simple Module Ieee80211Radio" alt="" coords="5,155,117,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="141,155,237,181">
+<area shape="rect" href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtAP.html" title="Simple Module Ieee80211MgmtAP" alt="" coords="261,155,392,181">
+<area shape="rect" href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html" title="Simple Module Ieee80211Mac" alt="" coords="416,155,520,181">
+<area shape="rect" href="inet.nodes.wireless.WirelessAP.html" title="Compound Module WirelessAP" alt="" coords="144,5,235,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessAPWithEth.html" title="Compound Module WirelessAPWithEth" alt="" coords="259,5,395,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.linklayer.ieee80211.Ieee80211NicAP-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicAP.html" title="Compound Module Ieee80211NicAP" alt="" coords="5,5,120,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessAP.html">WirelessAP</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a 802.11 Access Point. It can be used in conjunction with
+<a href="inet.nodes.wireless.WirelessHost.html">WirelessHost</a>, or any other host model containing WirelessNicSTA.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessAPWithEth.html">WirelessAPWithEth</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a 802.11 Access Point with Ethernet ports.
+It can be used in conjunction with <a href="inet.nodes.wireless.WirelessHost.html">WirelessHost</a>, or any other host model
+containing WirelessNicSTA.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/ifcard</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">uppergateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>to upper layers</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">uppergateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>from upper layers</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">radioIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>to receive AirFrames</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtAP.html">mgmt</a>.ssid</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"SSID"</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtAP.html">mgmt</a>.beaconInterval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100ms</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtAP.html">mgmt</a>.frameCapacity</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100</td>
+   <td>
+<p>maximum queue length</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtAP.html">mgmt</a>.numAuthSteps</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">4</td>
+   <td>
+<p>use 2 for Open System auth, 4 for WEP</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.maxQueueSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>max queue length in frames; only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.rtsThresholdBytes</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">2346B</td>
+   <td>
+<p>longer messages will be sent using RTS/CTS</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.retryLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">-1</td>
+   <td>
+<p>maximum number of retries per message, -1 means default</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.cwMinData</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">-1</td>
+   <td>
+<p>contention window for normal data frames, -1 means default</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.cwMinBroadcast</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">-1</td>
+   <td>
+<p>contention window for broadcast messages, -1 means default</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.channelNumber</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>channel identifier</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.transmitterPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">20mW</td>
+   <td>
+<p>power used for transmission of messages (in mW)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>(in bits/s)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">-110dBm</td>
+   <td>
+<p>base noise level (dBm)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.pathLossAlpha</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>used by the path loss calculation</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.snirThreshold</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">4dB</td>
+   <td>
+<p>if signal-noise ratio is below this threshold, frame is considered noise (in dB)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>received signals with power below sensitivity are ignored</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// This NIC implements an 802.11 network interface card,
+// in an AP, using infrastructure mode.
+//
+</span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">Ieee80211NicAP</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/ifcard&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// to upper layers
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// from upper layers
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">AirFrame</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// to receive AirFrames
+</span><span style="color: #000000; ">    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">mgmt</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Ieee80211MgmtAP</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=96,69;q=wlanDataQueue&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Ieee80211Mac</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">queueModule</span><span style="color: #000000; "> = </span><span style="color: #008000; ">&quot;mgmt&quot;</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=96,155&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">radio</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Ieee80211Radio</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=96,240&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">radio</span><span style="color: #000000; ">.</span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">radio</span><span style="color: #000000; ">.</span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowergateOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">radio</span><span style="color: #000000; ">.</span><span style="color: #000000; ">uppergateOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowergateIn</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">uppergateOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">mgmt</span><span style="color: #000000; ">.</span><span style="color: #000000; ">macIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">mgmt</span><span style="color: #000000; ">.</span><span style="color: #000000; ">macOut</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000000; ">mgmt</span><span style="color: #000000; ">.</span><span style="color: #000000; ">uppergateOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">mgmt</span><span style="color: #000000; ">.</span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; ">;
+
+}
+
+</span></pre>
+   </body>
+</html>

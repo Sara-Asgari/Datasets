@@ -1,0 +1,580 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Network <i>Net80211</i></h2>
+<b>Package:</b> inet.examples.adhoc.mf80211<br/><b>File: <a href="examples-adhoc-mf80211-Net80211.ned.html">examples/adhoc/mf80211/Net80211.ned</a></b><br/><p>(no description)</p><img src="inet.examples.adhoc.mf80211.Net80211-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.nodes.adhoc.MFMobileHost.html" title="MFMobileHost" alt="MFMobileHost" coords="11,96,115,137">
+<area shape="rect" href="inet.world.ChannelControl.html" title="ChannelControl" alt="ChannelControl" coords="15,76,109,130">
+<area shape="rect" href="inet.networklayer.autorouting.FlatNetworkConfigurator.html" title="FlatNetworkConfigurator" alt="FlatNetworkConfigurator" coords="104,80,181,125">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.adhoc.mf80211.Net80211-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.examples.adhoc.mf80211.Net80211.html" title="Network Net80211" alt="" coords="176,5,251,32">
+<area shape="rect" href="inet.nodes.adhoc.MFMobileHost.html" title="Compound Module MFMobileHost" alt="" coords="5,80,109,107">
+<area shape="rect" href="inet.networklayer.autorouting.FlatNetworkConfigurator.html" title="Simple Module FlatNetworkConfigurator" alt="" coords="133,80,293,107">
+<area shape="rect" href="inet.world.ChannelControl.html" title="Simple Module ChannelControl" alt="" coords="317,80,427,107">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.adhoc.mf80211.Net80211-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.examples.adhoc.mf80211.Net80211.html" title="Network Net80211" alt="" coords="5,5,80,32">
+</map>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">numHosts</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr class="local">
+   <td width="150">playgroundSizeX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr class="local">
+   <td width="150">playgroundSizeY</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">isNetwork</td>
+   <td width="100"><i></i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.advertisedWindow</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">14*this.mss</td>
+   <td>
+<p>in bytes, corresponds with the maximal receiver buffer capacity (Note: normally, NIC queues should be at least this size)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.delayedAcksEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>delayed ACKs enabled/disabled</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.nagleEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>Nagle's algorithm (RFC 896) enabled/disabled</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.limitedTransmitEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>Limited Transmit algorithm (RFC 3042) enabled/disabled (can be used for TCPReno/TCPTahoe/TCPNewReno/TCPNoCongestionControl)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.increasedIWEnabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>Increased Initial Window (RFC 3390) enabled/disabled</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.sackSupport</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>Selective Acknowledgment (RFC 2018, 2883, 3517) support (header option) (SACK will be enabled for a connection if both endpoints support it)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.mss</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">536</td>
+   <td>
+<p>maximum segment size (header option)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.tcpAlgorithmClass</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"TCPReno"</td>
+   <td>
+<p>TCPReno/TCPTahoe/TCPNewReno/TCPNoCongestionControl/DumbTCP</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.sendQueueClass</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"TCPVirtualDataSendQueue"</td>
+   <td>
+<p>TCPVirtualDataSendQueue/TCPMsgBasedSendQueue</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.receiveQueueClass</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"TCPVirtualDataRcvQueue"</td>
+   <td>
+<p>TCPVirtualDataRcvQueue/TCPMsgBasedRcvQueue</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.transport.tcp.TCP.html">tcp</a>.recordStats</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>recording of seqNum etc. into output vectors enabled/disabled</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.destAddr</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>destination <a href="inet.networklayer.ipv4.IP.html">IP</a> or <a href="inet.networklayer.ipv6.IPv6.html">IPv6</a> address</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.srcAddr</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>source <a href="inet.networklayer.ipv4.IP.html">IP</a> or <a href="inet.networklayer.ipv6.IPv6.html">IPv6</a> address (useful with <a href="inet.examples.sctp.multihomed.multi.html">multi</a>-homing)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.packetSize</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">56B</td>
+   <td>
+<p>of ping payload, in bytes</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.interval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">1s</td>
+   <td>
+<p>time to wait between pings (can be random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.hopLimit</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">32</td>
+   <td>
+<p>TTL or hopLimit for <a href="inet.networklayer.ipv4.IP.html">IP</a> packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.count</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>stop after count ping requests, 0 means continuously</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.startTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">uniform(0s,this.interval)</td>
+   <td>
+<p>send first ping at startTime</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.stopTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0s</td>
+   <td>
+<p>send no pings after stopTime, 0 means forever</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.applications.pingapp.PingApp.html">pingApp</a>.printPing</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>dump on stdout</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="inet.networklayer.ipv4.IP.html">ip</a>.procDelay</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0s</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="inet.networklayer.arp.ARP.html">arp</a>.retryTimeout</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">1s</td>
+   <td>
+<p>number seconds <a href="inet.networklayer.arp.ARP.html">ARP</a> waits between retries to resolve an IP address</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="inet.networklayer.arp.ARP.html">arp</a>.retryCount</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">3</td>
+   <td>
+<p>number of times <a href="inet.networklayer.arp.ARP.html">ARP</a> will attempt to resolve an IP address</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="inet.networklayer.arp.ARP.html">arp</a>.cacheTimeout</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">120s</td>
+   <td>
+<p>number seconds unused entries in the cache will time out</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.macLayer.Mac80211.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.macLayer.Mac80211.html">mac</a>.maxQueueSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.macLayer.Mac80211.html">mac</a>.rtsCts</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.macLayer.Mac80211.html">mac</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.macLayer.Mac80211.html">mac</a>.broadcastBackoff</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.macLayer.Mac80211.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.decider.Decider80211.html">decider</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.decider.Decider80211.html">decider</a>.snirThreshold</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">4dB</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.decider.Decider80211.html">decider</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.channelNumber</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>channel identifier</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.transmitterPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.headerLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.carrierFrequency</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.pathLossAlpha</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.nodes.adhoc.MFMobileHost.html">host</a>.<a href="inet.linklayer.mf80211.Nic80211.html">wlan</a>.<a href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html">snrEval</a>.sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.world.ChannelControl.html">channelcontrol</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>debug switch for core framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.world.ChannelControl.html">channelcontrol</a>.pMax</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">20mW</td>
+   <td>
+<p>maximum sending power used for this network (in mW)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.world.ChannelControl.html">channelcontrol</a>.sat</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">-110dBm</td>
+   <td>
+<p>signal attenuation threshold (in dBm)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.world.ChannelControl.html">channelcontrol</a>.alpha</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>path loss coefficient</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.world.ChannelControl.html">channelcontrol</a>.carrierFrequency</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">2.4GHz</td>
+   <td>
+<p>carrier frequency of the channel (in Hz)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.world.ChannelControl.html">channelcontrol</a>.numChannels</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1</td>
+   <td>
+<p>number of radio channels (frequencies)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.networklayer.autorouting.FlatNetworkConfigurator.html">configurator</a>.networkAddress</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"192.168.0.0"</td>
+   <td>
+<p>network part of the address (see netmask parameter)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.networklayer.autorouting.FlatNetworkConfigurator.html">configurator</a>.netmask</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"255.255.0.0"</td>
+   <td>
+<p>host part of addresses are autoconfigured</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">Net80211</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; ">;
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">host</span><span style="color: #000000; ">[</span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">]: </span><span style="color: #000000; ">MFMobileHost</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;r=,,#707070&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">channelcontrol</span><span style="color: #000000; ">: </span><span style="color: #000000; ">ChannelControl</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=60,50&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">configurator</span><span style="color: #000000; ">: </span><span style="color: #000000; ">FlatNetworkConfigurator</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=140,50&quot;</span><span style="color: #000000; ">);
+        }
+}
+
+</span></pre>
+   </body>
+</html>

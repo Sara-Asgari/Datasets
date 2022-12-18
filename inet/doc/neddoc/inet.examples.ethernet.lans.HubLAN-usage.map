@@ -1,0 +1,4 @@
+<area shape="rect" href="inet.examples.ethernet.lans.HubLAN.html" title="Network HubLAN" alt="" coords="135,5,207,32">
+<area shape="rect" href="ned.DelayChannel.html" title="Channel DelayChannel" alt="" coords="5,80,107,107">
+<area shape="rect" href="inet.nodes.ethernet.EtherHost.html" title="Compound Module EtherHost" alt="" coords="131,80,211,107">
+<area shape="rect" href="inet.linklayer.ethernet.EtherHub.html" title="Simple Module EtherHub" alt="" coords="235,80,309,107">

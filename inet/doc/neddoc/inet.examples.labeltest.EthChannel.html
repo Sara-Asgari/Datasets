@@ -1,0 +1,123 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Channel <i>EthChannel</i></h2>
+<b>Package:</b> inet.examples.labeltest<br/><b>File: <a href="examples-labeltest-ethchannel.ned.html">examples/labeltest/ethchannel.ned</a></b><br/>
+<p>TODO auto-generated type</p>
+<img src="inet.examples.labeltest.EthChannel-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.examples.labeltest.EthChannel.html" title="EthChannel" alt="EthChannel" coords="0,0,181,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.labeltest.EthChannel-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.examples.labeltest.EthChannel.html" title="Channel EthChannel" alt="" coords="5,5,93,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.labeltest.EthChannel-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.examples.labeltest.EthChannel.html" title="Channel EthChannel" alt="" coords="20,80,108,107">
+<area shape="rect" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="" coords="5,5,123,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="ned.DatarateChannel.html">DatarateChannel</a>
+      <i> (channel)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">disabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">delay</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0s</td>
+   <td>
+<p>propagation delay</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">datarate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>bits per second; 0=infinite</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">ber</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>bit error rate (BER)</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">per</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>packet error rate (PER)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>cDatarateChannel</i></td>
+   <td></td>
+</tr>
+<tr>
+   <td width="150">labels</td>
+   <td width="100"><i>EtherFrame-conn</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// TODO auto-generated type
+//
+</span><span style="color: #800000; font-weight: bold; ">channel</span><span style="color: #000000; "> </span><span style="color: #000000; ">EthChannel</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">EtherFrame</span><span style="color: #000000; ">-</span><span style="color: #000000; ">conn</span><span style="color: #000000; ">);
+    </span><span style="color: #000000; ">datarate</span><span style="color: #000000; "> = </span><span style="color: #008000; ">100</span><span style="color: #000000; ">Mbps</span><span style="color: #000000; ">;
+}
+</span></pre>
+   </body>
+</html>

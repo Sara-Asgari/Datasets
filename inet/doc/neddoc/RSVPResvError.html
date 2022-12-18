@@ -1,0 +1,109 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>RSVPResvError</i></h2>
+<b>File: <a href="src-networklayer-rsvp_te-RSVPResvMsg.msg.html">src/networklayer/rsvp_te/RSVPResvMsg.msg</a></b><br/><p><a href="../doxy/class_r_s_v_p_resv_error.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>FIXME missing documentation</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="RSVPResvError-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="RSVPResvError.html" title="Packet RSVPResvError" alt="" coords="5,5,117,32">
+<area shape="rect" href="RsvpHopObj_t.html" title="Struct RsvpHopObj_t" alt="" coords="9,80,113,107">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="RSVPResvError-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="RSVPResvError.html" title="Packet RSVPResvError" alt="" coords="5,80,117,107">
+<area shape="rect" href="RSVPPacket.html" title="Packet RSVPPacket" alt="" coords="12,5,111,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="RSVPPacket.html">RSVPPacket</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>FIXME missing documentation</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">session</td>
+   <td width="100">
+      <i>
+SessionObj_t</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">checksumValid</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">errorCode</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">hop</td>
+   <td width="100">
+      <i>
+RsvpHopObj_t</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">errorNode</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">rsvpKind</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// FIXME missing documentation
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">RSVPResvError</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">RSVPPacket</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; font-weight: bold; ">@customize</span><span style="color: #000000; ">(</span><span style="color: #008000; ">true</span><span style="color: #000000; ">);
+    </span><span style="color: #000000; ">RsvpHopObj_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">hop</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">errorNode</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">errorCode</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">rsvpKind</span><span style="color: #000000; "> = </span><span style="color: #000000; ">RERROR_MESSAGE</span><span style="color: #000000; ">;
+}
+
+
+</span></pre>
+   </body>
+</html>

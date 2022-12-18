@@ -1,0 +1,11 @@
+<area shape="rect" href="inet.nodes.ipv6.Router6.html" title="Compound Module Router6" alt="" coords="335,80,407,107">
+<area shape="rect" href="inet.nodes.ipv6.NetworkLayer6.html" title="Compound Module NetworkLayer6" alt="" coords="5,155,112,181">
+<area shape="rect" href="inet.networklayer.common.InterfaceTable.html" title="Simple Module InterfaceTable" alt="" coords="136,155,235,181">
+<area shape="rect" href="inet.networklayer.ipv6.RoutingTable6.html" title="Simple Module RoutingTable6" alt="" coords="259,155,360,181">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterface.html" title="Compound Module PPPInterface" alt="" coords="384,155,480,181">
+<area shape="rect" href="inet.linklayer.ethernet.EthernetInterface.html" title="Compound Module EthernetInterface" alt="" coords="504,155,624,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="648,155,768,181">
+<area shape="rect" href="inet.examples.ipv6.ipv6bulk.BulkTransfer6.html" title="Network BulkTransfer6" alt="" coords="56,5,155,32">
+<area shape="rect" href="inet.examples.ipv6.demonetworketh.DemoNetworkEth.html" title="Network DemoNetworkEth" alt="" coords="179,5,301,32">
+<area shape="rect" href="inet.examples.ipv6.nclients.NClientsEth.html" title="Network NClientsEth" alt="" coords="325,5,416,32">
+<area shape="rect" href="inet.examples.ipv6.nclients.NClientsPPP.html" title="Network NClientsPPP" alt="" coords="440,5,536,32">

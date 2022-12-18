@@ -1,0 +1,17 @@
+<area shape="rect" href="inet.nodes.wireless.WirelessHost.html" title="Compound Module WirelessHost" alt="" coords="699,80,797,107">
+<area shape="rect" href="inet.applications.pingapp.PingApp.html" title="Simple Module PingApp" alt="" coords="5,155,77,181">
+<area shape="rect" href="inet.mobility.BasicMobility.html" title="Module Interface BasicMobility" alt="" coords="101,155,200,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="224,155,320,181">
+<area shape="rect" href="inet.transport.udp.UDP.html" title="Simple Module UDP" alt="" coords="344,155,416,181">
+<area shape="rect" href="inet.applications.udpapp.UDPApp.html" title="Module Interface UDPApp" alt="" coords="440,155,512,181">
+<area shape="rect" href="inet.applications.tcpapp.TCPApp.html" title="Module Interface TCPApp" alt="" coords="536,155,608,181">
+<area shape="rect" href="inet.networklayer.common.InterfaceTable.html" title="Simple Module InterfaceTable" alt="" coords="632,155,731,181">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicSTA.html" title="Compound Module Ieee80211NicSTA" alt="" coords="755,155,877,181">
+<area shape="rect" href="inet.nodes.inet.NetworkLayer.html" title="Compound Module NetworkLayer" alt="" coords="901,155,1000,181">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterface.html" title="Compound Module PPPInterface" alt="" coords="1024,155,1120,181">
+<area shape="rect" href="inet.linklayer.ethernet.EthernetInterface.html" title="Compound Module EthernetInterface" alt="" coords="1144,155,1264,181">
+<area shape="rect" href="inet.networklayer.ipv4.RoutingTable.html" title="Simple Module RoutingTable" alt="" coords="1288,155,1384,181">
+<area shape="rect" href="inet.transport.tcp.TCP.html" title="Simple Module TCP" alt="" coords="1408,155,1480,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="1504,155,1624,181">
+<area shape="rect" href="inet.examples.wireless.handover.HandoverNetwork.html" title="Network HandoverNetwork" alt="" coords="628,5,748,32">
+<area shape="rect" href="inet.examples.Net.html" title="Network Net" alt="" coords="772,5,844,32">

@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html" title="Simple Module Ieee80211Mac" alt="" coords="376,80,480,107">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211Nic.html" title="Compound Module Ieee80211Nic" alt="" coords="5,5,104,32">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicAdhoc.html" title="Compound Module Ieee80211NicAdhoc" alt="" coords="128,5,264,32">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicAP.html" title="Compound Module Ieee80211NicAP" alt="" coords="288,5,403,32">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicAPSimplified.html" title="Compound Module Ieee80211NicAPSimplified" alt="" coords="427,5,597,32">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicSTA.html" title="Compound Module Ieee80211NicSTA" alt="" coords="621,5,744,32">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html" title="Compound Module Ieee80211NicSTASimplified" alt="" coords="768,5,947,32">

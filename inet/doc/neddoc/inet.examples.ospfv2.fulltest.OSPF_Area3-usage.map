@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.examples.ospfv2.fulltest.OSPF_Area3.html" title="Compound Module OSPF_Area3" alt="" coords="245,80,344,107">
+<area shape="rect" href="inet.nodes.inet.OSPFRouter.html" title="Compound Module OSPFRouter" alt="" coords="5,155,101,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="125,155,221,181">
+<area shape="rect" href="inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="245,155,344,181">
+<area shape="rect" href="inet.linklayer.ethernet.EtherHub.html" title="Simple Module EtherHub" alt="" coords="368,155,443,181">
+<area shape="rect" href="inet.examples.ospfv2.fulltest.OSPF_Area3.C.html" title="Channel C" alt="" coords="467,155,539,181">
+<area shape="rect" href="inet.examples.ospfv2.fulltest.OSPF_TestNetwork.html" title="Network OSPF_TestNetwork" alt="" coords="227,5,363,32">

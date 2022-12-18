@@ -1,0 +1,417 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>NotificationBoard</i></h2>
+<b>Package:</b> inet.base<br/><b>File: <a href="src-base-NotificationBoard.ned.html">src/base/NotificationBoard.ned</a></b><br/><p><a href="../doxy/class_notification_board.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Using <a href="inet.base.NotificationBoard.html">NotificationBoard</a>, modules can now notify each other about
+"events" such as routing table changes, interface status changes (up/down),
+interface configuration changes, wireless handovers, changes in the state
+of the wireless channel, mobile node position changes, etc.</p>
+<p>The <a href="inet.base.NotificationBoard.html">NotificationBoard</a> has exactly one instance within a host or router
+model, and acts as a intermediary between module where state changes
+can occur and modules which are interested in learning about those
+changes.</p>
+<p><a href="inet.base.NotificationBoard.html">NotificationBoard</a> is accessed via direct C++ method calls (not
+message exchange). Modules can "subscribe" to categories of changes
+(e.g. "routing table changed" or "radio channel became empty").
+When such a change occurs, the corresponding module (e.g. the <a href="inet.networklayer.ipv4.RoutingTable.html">RoutingTable</a>
+or the physical layer module) will let <a href="inet.base.NotificationBoard.html">NotificationBoard</a> know, and
+it will disseminate this information to all interested modules.</p>
+<img src="inet.base.NotificationBoard-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="NotificationBoard" alt="NotificationBoard" coords="0,0,154,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.base.NotificationBoard-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="1639,80,1759,107">
+<area shape="rect" href="inet.nodes.inet.BurstHost.html" title="Compound Module BurstHost" alt="" coords="5,5,85,32">
+<area shape="rect" href="inet.nodes.inet.ExtRouter.html" title="Compound Module ExtRouter" alt="" coords="109,5,189,32">
+<area shape="rect" href="inet.nodes.mpls.LDP_LSR.html" title="Compound Module LDP_LSR" alt="" coords="213,5,291,32">
+<area shape="rect" href="inet.nodes.adhoc.MFMobileHost.html" title="Compound Module MFMobileHost" alt="" coords="315,5,419,32">
+<area shape="rect" href="inet.nodes.adhoc.MobileHost.html" title="Compound Module MobileHost" alt="" coords="443,5,528,32">
+<area shape="rect" href="inet.examples.labeltest.MyHost.html" title="Compound Module MyHost" alt="" coords="552,5,624,32">
+<area shape="rect" href="inet.nodes.inet.OSPFRouter.html" title="Compound Module OSPFRouter" alt="" coords="648,5,744,32">
+<area shape="rect" href="inet.examples.adhoc.mobility.PlainMobilityHost.html" title="Compound Module PlainMobilityHost" alt="" coords="768,5,891,32">
+<area shape="rect" href="inet.nodes.inet.Router.html" title="Compound Module Router" alt="" coords="915,5,987,32">
+<area shape="rect" href="inet.nodes.ipv6.Router6.html" title="Compound Module Router6" alt="" coords="1011,5,1083,32">
+<area shape="rect" href="inet.nodes.mpls.RSVP_LSR.html" title="Compound Module RSVP_LSR" alt="" coords="1107,5,1195,32">
+<area shape="rect" href="inet.transport.rtp.RTPHost.html" title="Compound Module RTPHost" alt="" coords="1219,5,1291,32">
+<area shape="rect" href="inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="1315,5,1413,32">
+<area shape="rect" href="inet.nodes.ipv6.StandardHost6.html" title="Compound Module StandardHost6" alt="" coords="1437,5,1544,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithDLDuplicatesGenerator.html" title="Compound Module StandardHostWithDLDuplicatesGenerator" alt="" coords="1568,5,1829,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithDLThruputMeter.html" title="Compound Module StandardHostWithDLThruputMeter" alt="" coords="1853,5,2072,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithULDropsGenerator.html" title="Compound Module StandardHostWithULDropsGenerator" alt="" coords="2096,5,2331,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithULThruputMeter.html" title="Compound Module StandardHostWithULThruputMeter" alt="" coords="2355,5,2573,32">
+<area shape="rect" href="inet.nodes.inet.TCPSpoofingHost.html" title="Compound Module TCPSpoofingHost" alt="" coords="2597,5,2720,32">
+<area shape="rect" href="inet.examples.wireless.throughput.ThroughputClient.html" title="Compound Module ThroughputClient" alt="" coords="2744,5,2861,32">
+<area shape="rect" href="inet.examples.wireless.hosttohost.ThroughputServer.html" title="Compound Module ThroughputServer" alt="" coords="2885,5,3005,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessAP.html" title="Compound Module WirelessAP" alt="" coords="3029,5,3120,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessAPSimplified.html" title="Compound Module WirelessAPSimplified" alt="" coords="3144,5,3291,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessAPWithEth.html" title="Compound Module WirelessAPWithEth" alt="" coords="3315,5,3451,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessAPWithEthSimplified.html" title="Compound Module WirelessAPWithEthSimplified" alt="" coords="3475,5,3667,32">
+<area shape="rect" href="inet.examples.wireless.throughput.WirelessAPWithSink.html" title="Compound Module WirelessAPWithSink" alt="" coords="3691,5,3835,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessHost.html" title="Compound Module WirelessHost" alt="" coords="3859,5,3957,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessHostSimplified.html" title="Compound Module WirelessHostSimplified" alt="" coords="3981,5,4136,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.base.NotificationBoard-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="5,5,125,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.BurstHost.html">BurstHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Definition of an <a href="inet.networklayer.ipv4.IP.html">IP</a> node with a transport generator that connects
+to <a href="inet.networklayer.ipv4.IP.html">IP</a> directly, without <a href="inet.transport.tcp.TCP.html">TCP</a> or <a href="inet.transport.udp.UDP.html">UDP</a>.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.ExtRouter.html">ExtRouter</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>External router.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.mpls.LDP_LSR.html">LDP_LSR</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>An <a href="inet.networklayer.ldp.LDP.html">LDP</a>-capable router.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.adhoc.MFMobileHost.html">MFMobileHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a mobile host with a wireless (802.11b) card in ad-hoc mode.
+This model contains the Mobility Framework's 802.11 implementation, <a href="inet.linklayer.mf80211.Nic80211.html">Nic80211</a>,
+and <a href="inet.networklayer.ipv4.IP.html">IP</a>, <a href="inet.transport.tcp.TCP.html">TCP</a> and <a href="inet.transport.udp.UDP.html">UDP</a> protocols. The mobility model can be dynamically
+specified with the mobilityType parameter.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.adhoc.MobileHost.html">MobileHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a mobile host with a wireless (802.11b) card in ad-hoc mode.
+This model contains the new IEEE 802.11 implementation, <a href="inet.linklayer.ieee80211.Ieee80211Nic.html">Ieee80211Nic</a>,
+and <a href="inet.networklayer.ipv4.IP.html">IP</a>, <a href="inet.transport.tcp.TCP.html">TCP</a> and <a href="inet.transport.udp.UDP.html">UDP</a> protocols. The mobility model can be
+dynamically specified with the mobilityType parameter.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.labeltest.MyHost.html">MyHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.OSPFRouter.html">OSPFRouter</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>An OSPFv2 router.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.adhoc.mobility.PlainMobilityHost.html">PlainMobilityHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>A host for demonstrating mobility models only -- it contains
+no protocol layers at all.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.Router.html">Router</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IP router.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.ipv6.Router6.html">Router6</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IPv6 router.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.mpls.RSVP_LSR.html">RSVP_LSR</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>An RSVP-TE capable router.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.transport.rtp.RTPHost.html">RTPHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.StandardHost.html">StandardHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IP host with <a href="inet.transport.tcp.TCP.html">TCP</a>, <a href="inet.transport.udp.UDP.html">UDP</a> layers and applications.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.ipv6.StandardHost6.html">StandardHost6</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IPv6 host with <a href="inet.transport.tcp.TCP.html">TCP</a>, <a href="inet.transport.udp.UDP.html">UDP</a> layers and applications.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.StandardHostWithDLDuplicatesGenerator.html">StandardHostWithDLDuplicatesGenerator</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IP host with <a href="inet.transport.tcp.TCP.html">TCP</a>, <a href="inet.transport.udp.UDP.html">UDP</a>, <a href="inet.transport.sctp.SCTP.html">SCTP</a> layers and applications AND <a href="inet.linklayer.ppp.PPPInterfaceWithDLDuplicatesGenerator.html">PPPInterfaceWithDLDuplicatesGenerator</a>.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.StandardHostWithDLThruputMeter.html">StandardHostWithDLThruputMeter</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IP host with <a href="inet.transport.tcp.TCP.html">TCP</a>, <a href="inet.transport.udp.UDP.html">UDP</a>, <a href="inet.transport.sctp.SCTP.html">SCTP</a> layers and applications AND <a href="inet.linklayer.ppp.PPPInterfaceWithDLThruputMeter.html">PPPInterfaceWithDLThruputMeter</a>.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.StandardHostWithULDropsGenerator.html">StandardHostWithULDropsGenerator</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IP host with <a href="inet.transport.tcp.TCP.html">TCP</a>, <a href="inet.transport.udp.UDP.html">UDP</a>, <a href="inet.transport.sctp.SCTP.html">SCTP</a> layers and applications AND <a href="inet.linklayer.ppp.PPPInterfaceWithULDropsGenerator.html">PPPInterfaceWithULDropsGenerator</a>.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.StandardHostWithULThruputMeter.html">StandardHostWithULThruputMeter</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IP host with <a href="inet.transport.tcp.TCP.html">TCP</a>, <a href="inet.transport.udp.UDP.html">UDP</a>, <a href="inet.transport.sctp.SCTP.html">SCTP</a> layers and applications AND <a href="inet.linklayer.ppp.PPPInterfaceWithULThruputMeter.html">PPPInterfaceWithULThruputMeter</a>.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.TCPSpoofingHost.html">TCPSpoofingHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>IP host with <a href="inet.applications.tcpapp.TCPSpoof.html">TCPSpoof</a> in the application layer.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.wireless.hosttohost.ThroughputClient.html">ThroughputClient</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.wireless.throughput.ThroughputClient.html">ThroughputClient</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.wireless.hosttohost.ThroughputServer.html">ThroughputServer</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessAP.html">WirelessAP</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a 802.11 Access Point. It can be used in conjunction with
+<a href="inet.nodes.wireless.WirelessHost.html">WirelessHost</a>, or any other host model containing WirelessNicSTA.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessAPSimplified.html">WirelessAPSimplified</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a 802.11 Access Point, but using a simplified NIC that does not
+support handovers. It should be used in conjunction with <a href="inet.nodes.wireless.WirelessHostSimplified.html">WirelessHostSimplified</a>,
+or any other host model containing WirelessNicSTASimplified.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessAPWithEth.html">WirelessAPWithEth</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a 802.11 Access Point with Ethernet ports.
+It can be used in conjunction with <a href="inet.nodes.wireless.WirelessHost.html">WirelessHost</a>, or any other host model
+containing WirelessNicSTA.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessAPWithEthSimplified.html">WirelessAPWithEthSimplified</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a 802.11 Access Point with Ethernet ports, but using a simplified NIC
+that does not support handovers. It can be used in conjunction with
+<a href="inet.nodes.wireless.WirelessHostSimplified.html">WirelessHostSimplified</a>, or any other host model containing WirelessNicSTASimplified.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.wireless.throughput.WirelessAPWithSink.html">WirelessAPWithSink</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Well, it Models a 802.11 Access Point with a <a href="inet.base.Sink.html">Sink</a>.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessHost.html">WirelessHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a host with one wireless (802.11b) card in infrastructure mode.
+This module is basically a <a href="inet.nodes.inet.StandardHost.html">StandardHost</a> with an <a href="inet.linklayer.ieee80211.Ieee80211NicSTA.html">Ieee80211NicSTA</a> added.
+It should be used in conjunction with <a href="inet.nodes.wireless.WirelessAP.html">WirelessAP</a>, or any other AP model
+which contains <a href="inet.linklayer.ieee80211.Ieee80211NicAP.html">Ieee80211NicAP</a>.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.wireless.WirelessHostSimplified.html">WirelessHostSimplified</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Models a host with one wireless (802.11b) card in infrastructure mode,
+but using a simplified NIC that does not support handovers.
+This module is basically a <a href="inet.nodes.inet.StandardHost.html">StandardHost</a> with an <a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">Ieee80211NicSTASimplified</a>
+added. It should be used in conjunction with <a href="inet.nodes.wireless.WirelessAPSimplified.html">WirelessAPSimplified</a>,
+or any other AP model which contains <a href="inet.linklayer.ieee80211.Ieee80211NicAPSimplified.html">Ieee80211NicAPSimplified</a>.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/control</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Using NotificationBoard, modules can now notify each other about
+// &quot;events&quot; such as routing table changes, interface status changes (up/down),
+// interface configuration changes, wireless handovers, changes in the state
+// of the wireless channel, mobile node position changes, etc.
+//
+// The NotificationBoard has exactly one instance within a host or router
+// model, and acts as a intermediary between module where state changes
+// can occur and modules which are interested in learning about those
+// changes.
+//
+// NotificationBoard is accessed via direct C++ method calls (not
+// message exchange). Modules can &quot;subscribe&quot; to categories of changes
+// (e.g. &quot;routing table changed&quot; or &quot;radio channel became empty&quot;).
+// When such a change occurs, the corresponding module (e.g. the RoutingTable
+// or the physical layer module) will let NotificationBoard know, and
+// it will disseminate this information to all interested modules.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">NotificationBoard</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/control&quot;</span><span style="color: #000000; ">);
+}
+
+</span></pre>
+   </body>
+</html>

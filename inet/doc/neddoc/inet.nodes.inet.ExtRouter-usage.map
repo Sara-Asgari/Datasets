@@ -1,0 +1,11 @@
+<area shape="rect" href="inet.nodes.inet.ExtRouter.html" title="Compound Module ExtRouter" alt="" coords="452,80,532,107">
+<area shape="rect" href="inet.networklayer.common.InterfaceTable.html" title="Simple Module InterfaceTable" alt="" coords="5,155,104,181">
+<area shape="rect" href="inet.linklayer.ext.ExtInterface.html" title="Simple Module ExtInterface" alt="" coords="128,155,219,181">
+<area shape="rect" href="inet.util.NAMTraceWriter.html" title="Simple Module NAMTraceWriter" alt="" coords="243,155,360,181">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterface.html" title="Compound Module PPPInterface" alt="" coords="384,155,480,181">
+<area shape="rect" href="inet.nodes.inet.NetworkLayer.html" title="Compound Module NetworkLayer" alt="" coords="504,155,603,181">
+<area shape="rect" href="inet.linklayer.ethernet.EthernetInterface.html" title="Compound Module EthernetInterface" alt="" coords="627,155,747,181">
+<area shape="rect" href="inet.networklayer.ipv4.RoutingTable.html" title="Simple Module RoutingTable" alt="" coords="771,155,867,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="891,155,1011,181">
+<area shape="rect" href="inet.examples.emulation.extserver.extServer.html" title="Network extServer" alt="" coords="404,5,479,32">
+<area shape="rect" href="inet.examples.emulation.traceroute.Traceroute.html" title="Network Traceroute" alt="" coords="503,5,585,32">

@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.examples.ethernet.arptest.ARPTest.html" title="Network ARPTest" alt="" coords="341,5,413,32">
+<area shape="rect" href="inet.examples.ethernet.arptest.ARPTest.fiberline.html" title="Channel fiberline" alt="" coords="5,80,77,107">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="101,80,197,107">
+<area shape="rect" href="inet.networklayer.autorouting.FlatNetworkConfigurator.html" title="Simple Module FlatNetworkConfigurator" alt="" coords="221,80,381,107">
+<area shape="rect" href="inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="405,80,504,107">
+<area shape="rect" href="inet.nodes.inet.Router.html" title="Compound Module Router" alt="" coords="528,80,600,107">
+<area shape="rect" href="inet.nodes.ethernet.EtherSwitch.html" title="Compound Module EtherSwitch" alt="" coords="624,80,715,107">

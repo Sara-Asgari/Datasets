@@ -1,0 +1,6 @@
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithULThruputMeter.html" title="Compound Module PPPInterfaceWithULThruputMeter" alt="" coords="101,80,317,107">
+<area shape="rect" href="inet.linklayer.ppp.PPP.html" title="Simple Module PPP" alt="" coords="5,155,77,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="101,155,197,181">
+<area shape="rect" href="inet.linklayer.ppp.ThruputMeter.html" title="Simple Module ThruputMeter" alt="" coords="221,155,317,181">
+<area shape="rect" href="inet.networklayer.queue.OutputQueue.html" title="Module Interface OutputQueue" alt="" coords="341,155,440,181">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithULThruputMeter.html" title="Compound Module StandardHostWithULThruputMeter" alt="" coords="100,5,319,32">

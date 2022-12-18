@@ -1,0 +1,81 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>Ieee80211Prim_AuthenticateRequest</i></h2>
+<b>File: <a href="src-linklayer-ieee80211-mgmt-Ieee80211Primitives.msg.html">src/linklayer/ieee80211/mgmt/Ieee80211Primitives.msg</a></b><br/><p><a href="../doxy/class_ieee80211_prim___authenticate_request.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Losely based on MLME-AUTHENTICATE.request.</p>
+<p>Note: the "authType" parameter (Open System, Shared Key, etc) is omitted.
+The authentication procedure is simulated by this model by exchanging
+a number of "dummy" authentication frames without real contents,
+and it is configured in the AP how many authentication steps it requires.</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211Prim_AuthenticateRequest-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="Ieee80211Prim_AuthenticateRequest.html" title="Class Ieee80211Prim_AuthenticateRequest" alt="" coords="5,5,240,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211Prim_AuthenticateRequest-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="Ieee80211Prim_AuthenticateRequest.html" title="Class Ieee80211Prim_AuthenticateRequest" alt="" coords="5,80,240,107">
+<area shape="rect" href="Ieee80211PrimRequest.html" title="Class Ieee80211PrimRequest" alt="" coords="45,5,200,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="Ieee80211PrimRequest.html">Ieee80211PrimRequest</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Base class for request primitives</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">address</td>
+   <td width="100">
+      <i>
+MACAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">timeout</td>
+   <td width="100">
+      <i>
+simtime_t</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Losely based on MLME-AUTHENTICATE.request.
+//
+// Note: the &quot;authType&quot; parameter (Open System, Shared Key, etc) is omitted.
+// The authentication procedure is simulated by this model by exchanging
+// a number of &quot;dummy&quot; authentication frames without real contents,
+// and it is configured in the AP how many authentication steps it requires.
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">Ieee80211Prim_AuthenticateRequest</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">Ieee80211PrimRequest</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">MACAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">address</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">timeout</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

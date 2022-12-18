@@ -1,0 +1,5 @@
+<area shape="rect" href="EtherFrame.html" title="Packet EtherFrame" alt="" coords="277,5,365,32">
+<area shape="rect" href="EtherFrameWithLLC.html" title="Packet EtherFrameWithLLC" alt="" coords="5,80,144,107">
+<area shape="rect" href="EtherFrameWithSNAP.html" title="Packet EtherFrameWithSNAP" alt="" coords="168,80,320,107">
+<area shape="rect" href="EthernetIIFrame.html" title="Packet EthernetIIFrame" alt="" coords="344,80,456,107">
+<area shape="rect" href="EtherPauseFrame.html" title="Packet EtherPauseFrame" alt="" coords="480,80,605,107">

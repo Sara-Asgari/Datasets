@@ -1,0 +1,202 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>OSPFHelloPacket</i></h2>
+<b>File: <a href="src-networklayer-ospfv2-OSPFPacket.msg.html">src/networklayer/ospfv2/OSPFPacket.msg</a></b><br/><p><a href="../doxy/class_o_s_p_f_hello_packet.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Represents an OSPF Hello packet</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFHelloPacket-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="OSPFHelloPacket.html" title="Packet OSPFHelloPacket" alt="" coords="5,5,133,32">
+<area shape="rect" href="OSPFOptions.html" title="Struct OSPFOptions" alt="" coords="19,80,120,107">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFHelloPacket-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="OSPFHelloPacket.html" title="Packet OSPFHelloPacket" alt="" coords="5,80,133,107">
+<area shape="rect" href="OSPFPacket.html" title="Packet OSPFPacket" alt="" coords="20,5,119,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="OSPFPacket.html">OSPFPacket</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF packet header</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">designatedRouter</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">areaID</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">backupDesignatedRouter</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">neighbor</td>
+   <td width="100">
+      <i>
+IPAddress[]</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">checksum</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">type</td>
+   <td width="100">
+      <i>
+char</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">authenticationType</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">routerPriority</td>
+   <td width="100">
+      <i>
+char</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">version</td>
+   <td width="100">
+      <i>
+char</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">routerID</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">routerDeadInterval</td>
+   <td width="100">
+      <i>
+long</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">networkMask</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">authentication</td>
+   <td width="100">
+      <i>
+char[8]</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">helloInterval</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">packetLength</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">options</td>
+   <td width="100">
+      <i>
+OSPFOptions</i>
+   </td>
+   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Represents an OSPF Hello packet
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFHelloPacket</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFPacket</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">networkMask</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000080; font-weight: bold; ">short</span><span style="color: #000000; "> </span><span style="color: #000000; ">helloInterval</span><span style="color: #000000; "> = </span><span style="color: #008000; ">5</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000000; ">OSPFOptions</span><span style="color: #000000; "> </span><span style="color: #000000; ">options</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000080; font-weight: bold; ">char</span><span style="color: #000000; "> </span><span style="color: #000000; ">routerPriority</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">routerDeadInterval</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">designatedRouter</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">backupDesignatedRouter</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">neighbor</span><span style="color: #000000; ">[];
+}
+
+
+</span></pre>
+   </body>
+</html>

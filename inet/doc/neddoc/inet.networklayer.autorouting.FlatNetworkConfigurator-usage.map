@@ -1,0 +1,15 @@
+<area shape="rect" href="inet.networklayer.autorouting.FlatNetworkConfigurator.html" title="Simple Module FlatNetworkConfigurator" alt="" coords="628,80,788,107">
+<area shape="rect" href="inet.examples.ethernet.arptest2.ARPTest.html" title="Network ARPTest" alt="" coords="5,5,77,32">
+<area shape="rect" href="inet.examples.inet.bulktransfer.BulkTransfer.html" title="Network BulkTransfer" alt="" coords="101,5,195,32">
+<area shape="rect" href="inet.examples.inet.tcpclientserver.ClientServer.html" title="Network ClientServer" alt="" coords="219,5,309,32">
+<area shape="rect" href="inet.examples.inet.flatnet.FlatNet.html" title="Network FlatNet" alt="" coords="333,5,405,32">
+<area shape="rect" href="inet.examples.wireless.handover.HandoverNetwork.html" title="Network HandoverNetwork" alt="" coords="429,5,549,32">
+<area shape="rect" href="inet.examples.wireless.lan80211.Lan80211.html" title="Network Lan80211" alt="" coords="573,5,648,32">
+<area shape="rect" href="inet.examples.sctp.nclients.NClients.html" title="Network NClients" alt="" coords="672,5,744,32">
+<area shape="rect" href="inet.examples.inet.nclients.NClients2.html" title="Network NClients2" alt="" coords="768,5,845,32">
+<area shape="rect" href="inet.examples.adhoc.mf80211.Net80211.html" title="Network Net80211" alt="" coords="869,5,944,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTest.html" title="Network REDTest" alt="" coords="968,5,1040,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestDebug.html" title="Network REDTestDebug" alt="" coords="1064,5,1173,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestTh.html" title="Network REDTestTh" alt="" coords="1197,5,1283,32">
+<area shape="rect" href="inet.examples.inet.routerperf.RouterPerfNetwork.html" title="Network RouterPerfNetwork" alt="" coords="1307,5,1435,32">
+<area shape="rect" href="inet.examples.tes.twohosts.html" title="Network twohosts" alt="" coords="1459,5,1531,32">

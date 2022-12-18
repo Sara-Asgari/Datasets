@@ -1,0 +1,11 @@
+<area shape="rect" href="inet.mobility.BasicMobility.html" title="Module Interface BasicMobility" alt="" coords="641,5,740,32">
+<area shape="rect" href="inet.mobility.ANSimMobility.html" title="Simple Module ANSimMobility" alt="" coords="5,80,112,107">
+<area shape="rect" href="inet.mobility.BonnMotionMobility.html" title="Simple Module BonnMotionMobility" alt="" coords="136,80,272,107">
+<area shape="rect" href="inet.mobility.CircleMobility.html" title="Simple Module CircleMobility" alt="" coords="296,80,395,107">
+<area shape="rect" href="inet.mobility.ConstSpeedMobility.html" title="Simple Module ConstSpeedMobility" alt="" coords="419,80,555,107">
+<area shape="rect" href="inet.mobility.LinearMobility.html" title="Simple Module LinearMobility" alt="" coords="579,80,680,107">
+<area shape="rect" href="inet.mobility.MassMobility.html" title="Simple Module MassMobility" alt="" coords="704,80,803,107">
+<area shape="rect" href="inet.mobility.NullMobility.html" title="Simple Module NullMobility" alt="" coords="827,80,915,107">
+<area shape="rect" href="inet.mobility.RandomWPMobility.html" title="Simple Module RandomWPMobility" alt="" coords="939,80,1075,107">
+<area shape="rect" href="inet.mobility.RectangleMobility.html" title="Simple Module RectangleMobility" alt="" coords="1099,80,1221,107">
+<area shape="rect" href="inet.mobility.TurtleMobility.html" title="Simple Module TurtleMobility" alt="" coords="1245,80,1344,107">

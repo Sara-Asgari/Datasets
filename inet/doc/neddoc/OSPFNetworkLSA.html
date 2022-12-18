@@ -1,0 +1,81 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>OSPFNetworkLSA</i></h2>
+<b>File: <a href="src-networklayer-ospfv2-OSPFPacket.msg.html">src/networklayer/ospfv2/OSPFPacket.msg</a></b><br/><p><a href="../doxy/class_o_s_p_f_network_l_s_a.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Represents an OSPF Network LSA</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFNetworkLSA-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="OSPFNetworkLSA.html" title="Class OSPFNetworkLSA" alt="" coords="39,80,167,107">
+<area shape="rect" href="OSPFLinkStateUpdatePacket.html" title="Packet OSPFLinkStateUpdatePacket" alt="" coords="5,5,200,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFNetworkLSA-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="OSPFNetworkLSA.html" title="Class OSPFNetworkLSA" alt="" coords="5,80,133,107">
+<area shape="rect" href="OSPFLSA.html" title="Class OSPFLSA" alt="" coords="28,5,111,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="OSPFLSA.html">OSPFLSA</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>common ancestor type for all LSAs</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">networkMask</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">attachedRouters</td>
+   <td width="100">
+      <i>
+IPAddress[]</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">header</td>
+   <td width="100">
+      <i>
+OSPFLSAHeader</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Represents an OSPF Network LSA
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFNetworkLSA</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFLSA</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">networkMask</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">attachedRouters</span><span style="color: #000000; ">[];
+}
+
+</span></pre>
+   </body>
+</html>

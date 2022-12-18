@@ -1,0 +1,142 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>TCPCommand</i></h2>
+<b>File: <a href="src-transport-contract-TCPCommand.msg.html">src/transport/contract/TCPCommand.msg</a></b><br/><p><a href="../doxy/class_t_c_p_command.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Control info for TCP connections. This class is to be set as control info
+(see cMessage::setControlInfo()) on all messages exchanged between <a href="inet.transport.tcp.TCP.html">TCP</a> and
+application, in both directions. Some commands and indications
+(TCP_C_OPEN_xxx, TCP_I_STATUS) use subclasses.</p>
+<p>connId identifies the connection locally within the application (internally,
+<a href="inet.transport.tcp.TCP.html">TCP</a> uses the (app gate index, connId) pair to identify the socket).
+connId is to be chosen by the application in the open command.</p>
+<p><b>See also:</b> <a href="TcpCommandCode.html">TcpCommandCode</a>, <a href="TcpStatusInd.html">TcpStatusInd</a>, <a href="TCPOpenCommand.html">TCPOpenCommand</a>, <a href="TCPStatusInfo.html">TCPStatusInfo</a>, <a href="inet.transport.tcp.TCP.html">TCP</a></p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="TCPCommand-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="TCPCommand.html" title="Class TCPCommand" alt="" coords="5,5,109,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="TCPCommand-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="TCPCommand.html" title="Class TCPCommand" alt="" coords="277,5,381,32">
+<area shape="rect" href="TCPConnectInfo.html" title="Class TCPConnectInfo" alt="" coords="5,80,120,107">
+<area shape="rect" href="TCPErrorInfo.html" title="Class TCPErrorInfo" alt="" coords="144,80,237,107">
+<area shape="rect" href="TCPOpenCommand.html" title="Class TCPOpenCommand" alt="" coords="261,80,397,107">
+<area shape="rect" href="TCPSendCommand.html" title="Class TCPSendCommand" alt="" coords="421,80,557,107">
+<area shape="rect" href="TCPStatusInfo.html" title="Class TCPStatusInfo" alt="" coords="581,80,685,107">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="TCPConnectInfo.html">TCPConnectInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Sent with message kind TCP_I_ESTABLISHED, to let the app know
+about the local and remote <a href="inet.networklayer.ipv4.IP.html">IP</a> address and port.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="TCPErrorInfo.html">TCPErrorInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Currently not in use.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="TCPOpenCommand.html">TCPOpenCommand</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Control info to be used for active or passive <a href="inet.transport.tcp.TCP.html">TCP</a> open.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="TCPSendCommand.html">TCPSendCommand</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Control info to be used with the SEND command.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="TCPStatusInfo.html">TCPStatusInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Sent with message kind TCP_I_STATUS, in response to command TCP_C_STATUS.
+For explanation of variables, see RFC 793 or TCPStateVariables in
+TCPConnection.h.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">connId</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>identifies the socket within the application</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">userId</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>id than can be freely used by the app</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Control info for \TCP connections. This class is to be set as control info
+// (see cMessage::setControlInfo()) on all messages exchanged between TCP and
+// application, in both directions. Some commands and indications
+// (TCP_C_OPEN_xxx, TCP_I_STATUS) use subclasses.
+//
+// connId identifies the connection locally within the application (internally,
+// TCP uses the (app gate index, connId) pair to identify the socket).
+// connId is to be chosen by the application in the open command.
+//
+</span><span style="color: #0000ff; font-style: italic; ">//# </span><span style="color: #000080; ">TODO</span><span style="color: #0000ff; font-style: italic; "> explain userId
+</span><span style="color: #808080; font-style: italic; ">//
+// </span><span style="color: #000080; ">@see</span><span style="color: #808080; font-style: italic; "> TcpCommandCode, TcpStatusInd, TCPOpenCommand, TCPStatusInfo, TCP
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">TCPCommand</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">connId</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;   </span><span style="color: #808080; font-style: italic; ">// identifies the socket within the application
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">userId</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;   </span><span style="color: #808080; font-style: italic; ">// id than can be freely used by the app
+</span><span style="color: #000000; ">}
+
+
+</span></pre>
+   </body>
+</html>

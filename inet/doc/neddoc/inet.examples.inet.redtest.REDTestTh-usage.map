@@ -1,0 +1,9 @@
+<area shape="rect" href="inet.examples.inet.redtest.REDTestTh.html" title="Network REDTestTh" alt="" coords="476,5,561,32">
+<area shape="rect" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="" coords="5,80,123,107">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="147,80,243,107">
+<area shape="rect" href="inet.world.ChannelInstaller.html" title="Simple Module ChannelInstaller" alt="" coords="267,80,379,107">
+<area shape="rect" href="inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="403,80,501,107">
+<area shape="rect" href="inet.world.ScenarioManager.html" title="Simple Module ScenarioManager" alt="" coords="525,80,648,107">
+<area shape="rect" href="inet.networklayer.autorouting.FlatNetworkConfigurator.html" title="Simple Module FlatNetworkConfigurator" alt="" coords="672,80,832,107">
+<area shape="rect" href="inet.linklayer.ppp.ThruputMeter.html" title="Simple Module ThruputMeter" alt="" coords="856,80,952,107">
+<area shape="rect" href="inet.nodes.inet.Router.html" title="Compound Module Router" alt="" coords="976,80,1048,107">

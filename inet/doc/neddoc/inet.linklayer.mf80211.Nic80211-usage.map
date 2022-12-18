@@ -1,0 +1,6 @@
+<area shape="rect" href="inet.linklayer.mf80211.Nic80211.html" title="Compound Module Nic80211" alt="" coords="199,80,273,107">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="5,155,101,181">
+<area shape="rect" href="inet.linklayer.mf80211.phyLayer.decider.Decider80211.html" title="Simple Module Decider80211" alt="" coords="125,155,224,181">
+<area shape="rect" href="inet.linklayer.mf80211.phyLayer.snrEval.SnrEval80211.html" title="Simple Module SnrEval80211" alt="" coords="248,155,347,181">
+<area shape="rect" href="inet.linklayer.mf80211.macLayer.Mac80211.html" title="Simple Module Mac80211" alt="" coords="371,155,451,181">
+<area shape="rect" href="inet.nodes.adhoc.MFMobileHost.html" title="Compound Module MFMobileHost" alt="" coords="184,5,288,32">

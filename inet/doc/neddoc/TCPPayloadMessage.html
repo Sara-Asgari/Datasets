@@ -1,0 +1,53 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Struct <i>TCPPayloadMessage</i></h2>
+<b>File: <a href="src-transport-tcp-TCPSegment.msg.html">src/transport/tcp/TCPSegment.msg</a></b><br/><p>(no description)</p><h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="TCPPayloadMessage-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="TCPPayloadMessage.html" title="Struct TCPPayloadMessage" alt="" coords="5,80,152,107">
+<area shape="rect" href="TCPSegment.html" title="Packet TCPSegment" alt="" coords="29,5,128,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="TCPPayloadMessage-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="TCPPayloadMessage.html" title="Struct TCPPayloadMessage" alt="" coords="5,5,152,32">
+</map>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">endSequenceNo</td>
+   <td width="100">
+      <i>
+unsigned int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">msg</td>
+   <td width="100">
+      <i>
+cPacketPtr</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">struct</span><span style="color: #000000; "> </span><span style="color: #000000; ">TCPPayloadMessage</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">endSequenceNo</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">cPacketPtr</span><span style="color: #000000; "> </span><span style="color: #000000; ">msg</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

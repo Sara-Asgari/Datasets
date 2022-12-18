@@ -1,0 +1,95 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>Ieee80211Prim_BSSDescription</i></h2>
+<b>File: <a href="src-linklayer-ieee80211-mgmt-Ieee80211Primitives.msg.html">src/linklayer/ieee80211/mgmt/Ieee80211Primitives.msg</a></b><br/><p><a href="../doxy/class_ieee80211_prim___b_s_s_description.html" target="mainframe"><b>C++ definition</b></a></p>
+<p>(no description)</p><h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211Prim_BSSDescription-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="Ieee80211Prim_BSSDescription.html" title="Class Ieee80211Prim_BSSDescription" alt="" coords="12,80,217,107">
+<area shape="rect" href="Ieee80211SupportedRatesElement.html" title="Struct Ieee80211SupportedRatesElement" alt="" coords="5,155,224,181">
+<area shape="rect" href="Ieee80211Prim_ScanConfirm.html" title="Class Ieee80211Prim_ScanConfirm" alt="" coords="21,5,208,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211Prim_BSSDescription-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="Ieee80211Prim_BSSDescription.html" title="Class Ieee80211Prim_BSSDescription" alt="" coords="5,5,211,32">
+</map>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">supportedRates</td>
+   <td width="100">
+      <i>
+Ieee80211SupportedRatesElement</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">SSID</td>
+   <td width="100">
+      <i>
+string</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">beaconInterval</td>
+   <td width="100">
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">channelNumber</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">BSSID</td>
+   <td width="100">
+      <i>
+MACAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">rxPower</td>
+   <td width="100">
+      <i>
+double</i>
+   </td>
+   <td>
+<p>received power from AP; not part of the standard</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">Ieee80211Prim_BSSDescription</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">channelNumber</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">MACAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">BSSID</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">SSID</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">Ieee80211SupportedRatesElement</span><span style="color: #000000; "> </span><span style="color: #000000; ">supportedRates</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">beaconInterval</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">rxPower</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// received power from AP; not part of the standard
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   </body>
+</html>

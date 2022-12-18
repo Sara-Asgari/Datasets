@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.linklayer.ext.ExtInterface.html" title="Simple Module ExtInterface" alt="" coords="449,80,540,107">
+<area shape="rect" href="inet.nodes.inet.ExtRouter.html" title="Compound Module ExtRouter" alt="" coords="5,5,85,32">
+<area shape="rect" href="inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="109,5,208,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithDLDuplicatesGenerator.html" title="Compound Module StandardHostWithDLDuplicatesGenerator" alt="" coords="232,5,493,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithDLThruputMeter.html" title="Compound Module StandardHostWithDLThruputMeter" alt="" coords="517,5,736,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithULDropsGenerator.html" title="Compound Module StandardHostWithULDropsGenerator" alt="" coords="760,5,995,32">
+<area shape="rect" href="inet.nodes.inet.StandardHostWithULThruputMeter.html" title="Compound Module StandardHostWithULThruputMeter" alt="" coords="1019,5,1237,32">

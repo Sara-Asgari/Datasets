@@ -1,0 +1,19 @@
+<area shape="rect" href="inet.nodes.inet.StandardHostWithULDropsGenerator.html" title="Compound Module StandardHostWithULDropsGenerator" alt="" coords="908,80,1143,107">
+<area shape="rect" href="inet.applications.pingapp.PingApp.html" title="Simple Module PingApp" alt="" coords="5,155,77,181">
+<area shape="rect" href="inet.applications.sctpapp.SCTPApp.html" title="Module Interface SCTPApp" alt="" coords="101,155,179,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="203,155,299,181">
+<area shape="rect" href="inet.linklayer.ext.ExtInterface.html" title="Simple Module ExtInterface" alt="" coords="323,155,413,181">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithULDropsGenerator.html" title="Compound Module PPPInterfaceWithULDropsGenerator" alt="" coords="437,155,669,181">
+<area shape="rect" href="inet.transport.tcp.ITCP.html" title="Module Interface ITCP" alt="" coords="693,155,765,181">
+<area shape="rect" href="inet.transport.udp.UDP.html" title="Simple Module UDP" alt="" coords="789,155,861,181">
+<area shape="rect" href="inet.util.TCPDump.html" title="Simple Module TCPDump" alt="" coords="885,155,965,181">
+<area shape="rect" href="inet.applications.udpapp.UDPApp.html" title="Module Interface UDPApp" alt="" coords="989,155,1061,181">
+<area shape="rect" href="inet.applications.tcpapp.TCPApp.html" title="Module Interface TCPApp" alt="" coords="1085,155,1157,181">
+<area shape="rect" href="inet.transport.sctp.SCTP.html" title="Simple Module SCTP" alt="" coords="1181,155,1253,181">
+<area shape="rect" href="inet.networklayer.common.InterfaceTable.html" title="Simple Module InterfaceTable" alt="" coords="1277,155,1376,181">
+<area shape="rect" href="inet.util.NAMTraceWriter.html" title="Simple Module NAMTraceWriter" alt="" coords="1400,155,1517,181">
+<area shape="rect" href="inet.nodes.inet.NetworkLayer.html" title="Compound Module NetworkLayer" alt="" coords="1541,155,1640,181">
+<area shape="rect" href="inet.linklayer.ethernet.EthernetInterface.html" title="Compound Module EthernetInterface" alt="" coords="1664,155,1784,181">
+<area shape="rect" href="inet.networklayer.ipv4.RoutingTable.html" title="Simple Module RoutingTable" alt="" coords="1808,155,1904,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="1928,155,2048,181">
+<area shape="rect" href="inet.examples.inet.tcpsack.tcpSack.html" title="Network tcpSack" alt="" coords="989,5,1061,32">

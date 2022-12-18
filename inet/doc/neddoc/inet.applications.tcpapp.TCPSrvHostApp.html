@@ -1,0 +1,149 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>TCPSrvHostApp</i></h2>
+<b>Package:</b> inet.applications.tcpapp<br/><b>File: <a href="src-applications-tcpapp-TCPSrvHostApp.ned.html">src/applications/tcpapp/TCPSrvHostApp.ned</a></b><br/><p><a href="../doxy/class_t_c_p_srv_host_app.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>This module hosts <a href="inet.transport.tcp.TCP.html">TCP</a>-based server applications. It dynamically creates
+and launches a new "thread" object for each incoming connection.</p>
+<p>Server threads should be subclassed from the TCPServerThreadBase
+C++ class, registered in the C++ code using the Register_Class() macro,
+and the class name should be specified in the serverThreadClass
+parameter of <a href="inet.applications.tcpapp.TCPSrvHostApp.html">TCPSrvHostApp</a>. The thread object will receive events
+via a callback interface (methods like established(), dataArrived(),
+peerClosed(), timerExpired()), and can send packets via TCPSocket's send()
+method.</p>
+<p>Example server thread class: TCPGenericSrvThread (in the C++ documentation only).</p>
+<p>IMPORTANT: Before you try to use this module, make sure you actually need it!
+In most cases, <a href="inet.applications.tcpapp.TCPGenericSrvApp.html">TCPGenericSrvApp</a> and <a href="GenericAppMsg.html">GenericAppMsg</a> will be completely
+enough, and they are a lot easier to handle. You'll want to subclass your
+client from TCPGenericCliAppBase then; check <a href="inet.applications.tcpapp.TelnetApp.html">TelnetApp</a> and <a href="inet.applications.tcpapp.TCPBasicClientApp.html">TCPBasicClientApp</a>
+for examples.</p>
+<p>Compatible with both IPv4 and <a href="inet.networklayer.ipv6.IPv6.html">IPv6</a>.</p>
+<img src="inet.applications.tcpapp.TCPSrvHostApp-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.applications.tcpapp.TCPSrvHostApp.html" title="TCPSrvHostApp" alt="TCPSrvHostApp" coords="0,0,143,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.applications.tcpapp.TCPSrvHostApp-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.applications.tcpapp.TCPSrvHostApp.html" title="Simple Module TCPSrvHostApp" alt="" coords="5,5,120,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.applications.tcpapp.TCPSrvHostApp-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.applications.tcpapp.TCPSrvHostApp.html" title="Simple Module TCPSrvHostApp" alt="" coords="5,80,120,107">
+<area shape="rect" href="inet.applications.tcpapp.TCPApp.html" title="Module Interface TCPApp" alt="" coords="27,5,99,32">
+</map>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>may be left empty ("")</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">port</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1000</td>
+   <td>
+<p>port number to listen on</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">serverThreadClass</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>class name of "thread" objects to launch on incoming connections</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/app</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">tcpIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">tcpOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// This module hosts TCP-based server applications. It dynamically creates
+// and launches a new &quot;thread&quot; object for each incoming connection.
+//
+// Server threads should be subclassed from the TCPServerThreadBase
+// C++ class, registered in the C++ code using the Register_Class() macro,
+// and the class name should be specified in the serverThreadClass
+// parameter of TCPSrvHostApp. The thread object will receive events
+// via a callback interface (methods like established(), dataArrived(),
+// peerClosed(), timerExpired()), and can send packets via TCPSocket's send()
+// method.
+//
+// Example server thread class: TCPGenericSrvThread (in the C++ documentation only).
+//
+// IMPORTANT: Before you try to use this module, make sure you actually need it!
+// In most cases, TCPGenericSrvApp and GenericAppMsg will be completely
+// enough, and they are a lot easier to handle. You'll want to subclass your
+// client from TCPGenericCliAppBase then; check TelnetApp and TCPBasicClientApp
+// for examples.
+//
+// Compatible with both IPv4 and IPv6.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">TCPSrvHostApp</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">like</span><span style="color: #000000; "> </span><span style="color: #000000; ">TCPApp</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">address</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// may be left empty (&quot;&quot;)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">port</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1000</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// port number to listen on
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">serverThreadClass</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// class name of &quot;thread&quot; objects to launch on incoming connections
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/app&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">tcpIn</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">TCPCommand</span><span style="color: #000000; ">/</span><span style="color: #000000; ">up</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">tcpOut</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">TCPCommand</span><span style="color: #000000; ">/</span><span style="color: #000000; ">down</span><span style="color: #000000; ">);
+}
+
+</span></pre>
+   </body>
+</html>

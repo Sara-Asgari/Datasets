@@ -1,0 +1,174 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>OSPFPacket</i></h2>
+<b>File: <a href="src-networklayer-ospfv2-OSPFPacket.msg.html">src/networklayer/ospfv2/OSPFPacket.msg</a></b><br/><p><a href="../doxy/class_o_s_p_f_packet.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Represents an OSPF packet header</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFPacket-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="OSPFPacket.html" title="Packet OSPFPacket" alt="" coords="5,5,104,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFPacket-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="OSPFPacket.html" title="Packet OSPFPacket" alt="" coords="480,5,579,32">
+<area shape="rect" href="OSPFDatabaseDescriptionPacket.html" title="Packet OSPFDatabaseDescriptionPacket" alt="" coords="5,80,224,107">
+<area shape="rect" href="OSPFHelloPacket.html" title="Packet OSPFHelloPacket" alt="" coords="248,80,376,107">
+<area shape="rect" href="OSPFLinkStateAcknowledgementPacket.html" title="Packet OSPFLinkStateAcknowledgementPacket" alt="" coords="400,80,659,107">
+<area shape="rect" href="OSPFLinkStateRequestPacket.html" title="Packet OSPFLinkStateRequestPacket" alt="" coords="683,80,883,107">
+<area shape="rect" href="OSPFLinkStateUpdatePacket.html" title="Packet OSPFLinkStateUpdatePacket" alt="" coords="907,80,1101,107">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="OSPFDatabaseDescriptionPacket.html">OSPFDatabaseDescriptionPacket</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF Database Description packet</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="OSPFHelloPacket.html">OSPFHelloPacket</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF Hello packet</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="OSPFLinkStateAcknowledgementPacket.html">OSPFLinkStateAcknowledgementPacket</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF <a href="Link.html">Link</a> State Acknowledgement packet</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="OSPFLinkStateRequestPacket.html">OSPFLinkStateRequestPacket</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF <a href="Link.html">Link</a> State Request packet</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="OSPFLinkStateUpdatePacket.html">OSPFLinkStateUpdatePacket</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF <a href="Link.html">Link</a> State Update packet</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">routerID</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">areaID</td>
+   <td width="100">
+      <i>
+IPAddress</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">authentication</td>
+   <td width="100">
+      <i>
+char[8]</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">checksum</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">type</td>
+   <td width="100">
+      <i>
+char</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">packetLength</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">authenticationType</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">version</td>
+   <td width="100">
+      <i>
+char</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Represents an OSPF packet header
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFPacket</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">char</span><span style="color: #000000; "> </span><span style="color: #000000; ">version</span><span style="color: #000000; "> = </span><span style="color: #008000; ">2</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">char</span><span style="color: #000000; "> </span><span style="color: #000000; ">type</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@enum</span><span style="color: #000000; ">(</span><span style="color: #000000; ">OSPFPacketType</span><span style="color: #000000; ">) = </span><span style="color: #000000; ">HelloPacket</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">short</span><span style="color: #000000; "> </span><span style="color: #000000; ">packetLength</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">routerID</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">areaID</span><span style="color: #000000; ">;
+
+    </span><span style="color: #000080; font-weight: bold; ">short</span><span style="color: #000000; "> </span><span style="color: #000000; ">checksum</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">short</span><span style="color: #000000; "> </span><span style="color: #000000; ">authenticationType</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">char</span><span style="color: #000000; "> </span><span style="color: #000000; ">authentication</span><span style="color: #000000; ">[</span><span style="color: #008000; ">8</span><span style="color: #000000; ">];
+}
+
+</span></pre>
+   </body>
+</html>

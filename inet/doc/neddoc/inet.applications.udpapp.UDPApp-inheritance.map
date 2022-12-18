@@ -1,0 +1,6 @@
+<area shape="rect" href="inet.applications.udpapp.UDPApp.html" title="Module Interface UDPApp" alt="" coords="260,5,332,32">
+<area shape="rect" href="inet.applications.udpapp.UDPBasicApp.html" title="Simple Module UDPBasicApp" alt="" coords="5,80,109,107">
+<area shape="rect" href="inet.applications.udpapp.UDPEchoApp.html" title="Simple Module UDPEchoApp" alt="" coords="133,80,235,107">
+<area shape="rect" href="inet.applications.udpapp.UDPSink.html" title="Simple Module UDPSink" alt="" coords="259,80,333,107">
+<area shape="rect" href="inet.applications.udpapp.UDPVideoStreamCli.html" title="Simple Module UDPVideoStreamCli" alt="" coords="357,80,496,107">
+<area shape="rect" href="inet.applications.udpapp.UDPVideoStreamSvr.html" title="Simple Module UDPVideoStreamSvr" alt="" coords="520,80,661,107">

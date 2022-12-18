@@ -1,0 +1,5 @@
+<area shape="rect" href="inet.linklayer.ethernet.EtherBus.html" title="Simple Module EtherBus" alt="" coords="149,80,224,107">
+<area shape="rect" href="inet.examples.ethernet.arptest2.ARPTest.html" title="Network ARPTest" alt="" coords="5,5,77,32">
+<area shape="rect" href="inet.examples.ethernet.lans.BusLAN.html" title="Network BusLAN" alt="" coords="101,5,173,32">
+<area shape="rect" href="inet.examples.ethernet.lans.LargeLAN.html" title="Compound Module LargeLAN" alt="" coords="197,5,275,32">
+<area shape="rect" href="inet.examples.ethernet.lans.MixedLAN.html" title="Network MixedLAN" alt="" coords="299,5,379,32">

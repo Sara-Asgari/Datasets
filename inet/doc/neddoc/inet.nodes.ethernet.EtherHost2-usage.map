@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.nodes.ethernet.EtherHost2.html" title="Compound Module EtherHost2" alt="" coords="240,80,325,107">
+<area shape="rect" href="inet.applications.ethernet.EtherAppSrv.html" title="Simple Module EtherAppSrv" alt="" coords="5,155,99,181">
+<area shape="rect" href="inet.linklayer.ethernet.EtherMAC2.html" title="Simple Module EtherMAC2" alt="" coords="123,155,211,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="235,155,331,181">
+<area shape="rect" href="inet.linklayer.ethernet.EtherLLC.html" title="Simple Module EtherLLC" alt="" coords="355,155,429,181">
+<area shape="rect" href="inet.applications.ethernet.EtherAppCli.html" title="Simple Module EtherAppCli" alt="" coords="453,155,544,181">
+<area shape="rect" href="inet.examples.ethernet.lans.SwitchedDuplexLAN.html" title="Network SwitchedDuplexLAN" alt="" coords="213,5,352,32">

@@ -1,0 +1,16 @@
+<area shape="rect" href="inet.nodes.mpls.LDP_LSR.html" title="Compound Module LDP_LSR" alt="" coords="729,80,807,107">
+<area shape="rect" href="inet.networklayer.mpls.LIBTable.html" title="Simple Module LIBTable" alt="" coords="5,155,77,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="101,155,197,181">
+<area shape="rect" href="inet.transport.udp.UDP.html" title="Simple Module UDP" alt="" coords="221,155,293,181">
+<area shape="rect" href="inet.networklayer.ted.LinkStateRouting.html" title="Simple Module LinkStateRouting" alt="" coords="317,155,437,181">
+<area shape="rect" href="inet.networklayer.ted.TED.html" title="Simple Module TED" alt="" coords="461,155,533,181">
+<area shape="rect" href="inet.networklayer.mpls.MPLS.html" title="Simple Module MPLS" alt="" coords="557,155,629,181">
+<area shape="rect" href="inet.networklayer.common.InterfaceTable.html" title="Simple Module InterfaceTable" alt="" coords="653,155,752,181">
+<area shape="rect" href="inet.util.NAMTraceWriter.html" title="Simple Module NAMTraceWriter" alt="" coords="776,155,893,181">
+<area shape="rect" href="inet.nodes.inet.NetworkLayer.html" title="Compound Module NetworkLayer" alt="" coords="917,155,1016,181">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterface.html" title="Compound Module PPPInterface" alt="" coords="1040,155,1136,181">
+<area shape="rect" href="inet.networklayer.ipv4.RoutingTable.html" title="Simple Module RoutingTable" alt="" coords="1160,155,1256,181">
+<area shape="rect" href="inet.transport.tcp.TCP.html" title="Simple Module TCP" alt="" coords="1280,155,1352,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="1376,155,1496,181">
+<area shape="rect" href="inet.networklayer.ldp.LDP.html" title="Simple Module LDP" alt="" coords="1520,155,1592,181">
+<area shape="rect" href="inet.examples.mpls.ldp.LDPTEST.html" title="Network LDPTEST" alt="" coords="729,5,807,32">

@@ -1,0 +1,165 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>ARP</i></h2>
+<b>Package:</b> inet.networklayer.arp<br/><b>File: <a href="src-networklayer-arp-ARP.ned.html">src/networklayer/arp/ARP.ned</a></b><br/><p><a href="../doxy/class_a_r_p.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Implements the Address Resolution Protocol for IPv4 and IEEE 802 6-byte
+MAC addresses.</p>
+<p>Expects <a href="IPRoutingDecision.html">IPRoutingDecision</a> control info objects to be attached to packets
+coming from higher layers. ARP packets are represented by the <a href="ARPPacket.html">ARPPacket</a>
+class. Datagrams to be sent and incoming ARP packets are expected to
+on gate ipIn.</p>
+<p>ARP resolution is used over <i>broadcast</i> interfaces only,
+that is, over interfaces that have the <tt>isBroadcast()</tt> flag set in
+<tt>InterfaceEntry</tt> (see <a href="inet.networklayer.common.InterfaceTable.html">InterfaceTable</a>). Since routing files
+(<tt>.irt</tt> or <tt>.mrt</tt> files, given as parameter to <a href="inet.networklayer.ipv4.RoutingTable.html">RoutingTable</a>)
+may modify the default interface configuration, you must take care that
+these files don't contain the word <tt>BROADCAST</tt> e.g. for <a href="inet.linklayer.ppp.PPP.html">PPP</a>
+interfaces.</p>
+<img src="inet.networklayer.arp.ARP-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.networklayer.arp.ARP.html" title="ARP" alt="ARP" coords="0,0,69,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.networklayer.arp.ARP-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.networklayer.arp.ARP.html" title="Simple Module ARP" alt="" coords="19,80,91,107">
+<area shape="rect" href="inet.nodes.inet.NetworkLayer.html" title="Compound Module NetworkLayer" alt="" coords="5,5,104,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.networklayer.arp.ARP-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.networklayer.arp.ARP.html" title="Simple Module ARP" alt="" coords="5,5,77,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="inet.nodes.inet.NetworkLayer.html">NetworkLayer</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Network layer of an IP node.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">retryTimeout</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">1s</td>
+   <td>
+<p>number seconds <a href="inet.networklayer.arp.ARP.html">ARP</a> waits between retries to resolve an IP address</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">retryCount</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">3</td>
+   <td>
+<p>number of times <a href="inet.networklayer.arp.ARP.html">ARP</a> will attempt to resolve an IP address</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">cacheTimeout</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">120s</td>
+   <td>
+<p>number seconds unused entries in the cache will time out</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">proxyARP</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>
+   <td>
+<p>sets proxy ARP mode (replying to ARP requests for the addresses for which a routing table entry exists)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/layer</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">ipIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">nicOut [ ]</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Implements the Address Resolution Protocol for IPv4 and IEEE 802 6-byte
+// MAC addresses.
+//
+// Expects IPRoutingDecision control info objects to be attached to packets
+// coming from higher layers. \ARP packets are represented by the ARPPacket
+// class. Datagrams to be sent and incoming \ARP packets are expected to
+// on gate ipIn.
+//
+// \ARP resolution is used over </span><span style="color: #800000; ">&lt;i&gt;</span><span style="color: #808080; font-style: italic; ">broadcast</span><span style="color: #800000; ">&lt;/i&gt;</span><span style="color: #808080; font-style: italic; "> interfaces only,
+// that is, over interfaces that have the </span><span style="color: #800000; ">&lt;tt&gt;</span><span style="color: #808080; font-style: italic; ">isBroadcast()</span><span style="color: #800000; ">&lt;/tt&gt;</span><span style="color: #808080; font-style: italic; "> flag set in
+// </span><span style="color: #800000; ">&lt;tt&gt;</span><span style="color: #808080; font-style: italic; ">InterfaceEntry</span><span style="color: #800000; ">&lt;/tt&gt;</span><span style="color: #808080; font-style: italic; "> (see InterfaceTable). Since routing files
+// (</span><span style="color: #800000; ">&lt;tt&gt;</span><span style="color: #808080; font-style: italic; ">.irt</span><span style="color: #800000; ">&lt;/tt&gt;</span><span style="color: #808080; font-style: italic; "> or </span><span style="color: #800000; ">&lt;tt&gt;</span><span style="color: #808080; font-style: italic; ">.mrt</span><span style="color: #800000; ">&lt;/tt&gt;</span><span style="color: #808080; font-style: italic; "> files, given as parameter to RoutingTable)
+// may modify the default interface configuration, you must take care that
+// these files don't contain the word </span><span style="color: #800000; ">&lt;tt&gt;</span><span style="color: #808080; font-style: italic; ">BROADCAST</span><span style="color: #800000; ">&lt;/tt&gt;</span><span style="color: #808080; font-style: italic; "> e.g. for PPP
+// interfaces.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">ARP</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">retryTimeout</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;s&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// number seconds ARP waits between retries to resolve an \IP address
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">retryCount</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">3</span><span style="color: #000000; ">);   </span><span style="color: #808080; font-style: italic; ">// number of times ARP will attempt to resolve an \IP address
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">cacheTimeout</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;s&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">120</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// number seconds unused entries in the cache will time out
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">proxyARP</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">true</span><span style="color: #000000; ">);        </span><span style="color: #808080; font-style: italic; ">// sets proxy \ARP mode (replying to \ARP requests for the addresses for which a routing table entry exists)
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/layer&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">ipIn</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">ARPPacket</span><span style="color: #000000; ">,</span><span style="color: #000000; ">IPDatagram</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">nicOut</span><span style="color: #000000; ">[] </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">ARPPacket</span><span style="color: #000000; ">);
+}
+</span></pre>
+   </body>
+</html>

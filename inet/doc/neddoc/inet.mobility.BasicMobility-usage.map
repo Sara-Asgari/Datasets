@@ -1,0 +1,6 @@
+<area shape="rect" href="inet.mobility.BasicMobility.html" title="Module Interface BasicMobility" alt="" coords="255,80,353,107">
+<area shape="rect" href="inet.nodes.adhoc.MFMobileHost.html" title="Compound Module MFMobileHost" alt="" coords="5,5,109,32">
+<area shape="rect" href="inet.nodes.adhoc.MobileHost.html" title="Compound Module MobileHost" alt="" coords="133,5,219,32">
+<area shape="rect" href="inet.examples.adhoc.mobility.PlainMobilityHost.html" title="Compound Module PlainMobilityHost" alt="" coords="243,5,365,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessHost.html" title="Compound Module WirelessHost" alt="" coords="389,5,488,32">
+<area shape="rect" href="inet.nodes.wireless.WirelessHostSimplified.html" title="Compound Module WirelessHostSimplified" alt="" coords="512,5,667,32">

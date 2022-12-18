@@ -1,0 +1,399 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Compound Module <i>ThroughputClient</i></h2>
+<b>Package:</b> inet.examples.wireless.hosttohost<br/><b>File: <a href="examples-wireless-hosttohost-Throughput.ned.html">examples/wireless/hosttohost/Throughput.ned</a></b><br/><p>(no description)</p><img src="inet.examples.wireless.hosttohost.ThroughputClient-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="NotificationBoard" alt="NotificationBoard" coords="0,86,108,147">
+<area shape="rect" href="inet.applications.ethernet.EtherAppCli.html" title="EtherAppCli" alt="EtherAppCli" coords="162,76,206,137">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html" title="Ieee80211NicSTASimplified" alt="Ieee80211NicSTASimplified" coords="94,150,145,211">
+<area shape="rect" href="inet.mobility.CircleMobility.html" title="CircleMobility" alt="CircleMobility" coords="27,165,77,210">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.wireless.hosttohost.ThroughputClient-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.examples.wireless.hosttohost.ThroughputClient.html" title="Compound Module ThroughputClient" alt="" coords="319,80,436,107">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="5,155,101,181">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html" title="Compound Module Ieee80211NicSTASimplified" alt="" coords="125,155,304,181">
+<area shape="rect" href="inet.mobility.CircleMobility.html" title="Simple Module CircleMobility" alt="" coords="328,155,427,181">
+<area shape="rect" href="inet.applications.ethernet.EtherAppCli.html" title="Simple Module EtherAppCli" alt="" coords="451,155,541,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="565,155,685,181">
+<area shape="rect" href="inet.examples.wireless.hosttohost.Throughput.html" title="Network Throughput" alt="" coords="335,5,420,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.wireless.hosttohost.ThroughputClient-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.examples.wireless.hosttohost.ThroughputClient.html" title="Compound Module ThroughputClient" alt="" coords="5,5,123,32">
+</map>
+<h3 class="subtitle">Networks:</h3>
+<table>
+<tr>
+   <td>
+      <a href="inet.examples.wireless.hosttohost.Throughput.html">Throughput</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=device/wifilaptop</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">radioIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="inet.applications.ethernet.EtherAppCli.html">cli</a>.destAddress</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>destination MAC address, or module path name of destination station; empty means off</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.applications.ethernet.EtherAppCli.html">cli</a>.startTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">this.waitTime</td>
+   <td>
+<p>time of sending the first request</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.applications.ethernet.EtherAppCli.html">cli</a>.waitTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">uniform(0s,1s)</td>
+   <td>
+<p>interval between sending requests</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.applications.ethernet.EtherAppCli.html">cli</a>.reqLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100B</td>
+   <td>
+<p>length of request packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.applications.ethernet.EtherAppCli.html">cli</a>.respLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1KB</td>
+   <td>
+<p>length of response packets</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtSTASimplified.html">mgmt</a>.accessPointAddress</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>MAC address of associate AP</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mgmt.Ieee80211MgmtSTASimplified.html">mgmt</a>.frameCapacity</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">100</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.address</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">"auto"</td>
+   <td>
+<p>MAC address as hex string (12 hex digits), or
+"auto". "auto" values will be replaced by
+a generated MAC address in init stage 0.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.maxQueueSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>max queue length in frames; only used if queueModule==""</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.rtsThresholdBytes</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">2346B</td>
+   <td>
+<p>longer messages will be sent using RTS/CTS</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.retryLimit</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">-1</td>
+   <td>
+<p>maximum number of retries per message, -1 means default</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.cwMinData</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">-1</td>
+   <td>
+<p>contention window for normal data frames, -1 means default</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.cwMinBroadcast</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">-1</td>
+   <td>
+<p>contention window for broadcast messages, -1 means default</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.ieee80211.mac.Ieee80211Mac.html">mac</a>.mtu</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">1500</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.channelNumber</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>channel identifier</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.transmitterPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">20mW</td>
+   <td>
+<p>power used for transmission of messages (in mW)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>(in bits/s)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">-110dBm</td>
+   <td>
+<p>base noise level (dBm)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.pathLossAlpha</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">2</td>
+   <td>
+<p>used by the path loss calculation</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.snirThreshold</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">4dB</td>
+   <td>
+<p>if signal-noise ratio is below this threshold, frame is considered noise (in dB)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.linklayer.ieee80211.Ieee80211NicSTASimplified.html">wlan</a>.<a href="inet.linklayer.radio.Ieee80211Radio.html">radio</a>.sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>received signals with power below sensitivity are ignored</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.mobility.CircleMobility.html">mobility</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.mobility.CircleMobility.html">mobility</a>.cx</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100</td>
+   <td>
+<p>x coord of the center of the circle</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.mobility.CircleMobility.html">mobility</a>.cy</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100</td>
+   <td>
+<p>y coord of the center of the circle</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.mobility.CircleMobility.html">mobility</a>.r</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100</td>
+   <td>
+<p>radius of the circle</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.mobility.CircleMobility.html">mobility</a>.speed</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">2mps</td>
+   <td>
+<p>speed of the host (in m/s)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.mobility.CircleMobility.html">mobility</a>.startAngle</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>starting angle (degreees)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="inet.mobility.CircleMobility.html">mobility</a>.updateInterval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100ms</td>
+   <td>
+<p>time interval to update the hosts position</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">ThroughputClient</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=device/wifilaptop&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@directIn</span><span style="color: #000000; ">;
+
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">notificationBoard</span><span style="color: #000000; ">: </span><span style="color: #000000; ">NotificationBoard</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=52,70&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">cli</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EtherAppCli</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">registerSAP</span><span style="color: #000000; "> = </span><span style="color: #008000; ">false</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;b=40,24;p=180,60,col&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">wlan</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Ieee80211NicSTASimplified</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=112,134;q=queue&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">: </span><span style="color: #000000; ">CircleMobility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=50,141&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">allowunconnected</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">wlan</span><span style="color: #000000; ">.</span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">cli</span><span style="color: #000000; ">.</span><span style="color: #000000; ">out</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">wlan</span><span style="color: #000000; ">.</span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

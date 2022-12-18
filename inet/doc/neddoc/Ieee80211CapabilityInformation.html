@@ -1,0 +1,92 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Struct <i>Ieee80211CapabilityInformation</i></h2>
+<b>File: <a href="src-linklayer-ieee80211-mgmt-Ieee80211MgmtFrames.msg.html">src/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg</a></b><br/>
+<p>Capability Information field format. This field is not used
+by the model (and is omitted from management frame formats too),
+because its fields are related to features not supported by this model
+(PCF, privacy, and beacons in ad-hoc mode). It is only provided here
+for completeness.</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211CapabilityInformation-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="Ieee80211CapabilityInformation.html" title="Struct Ieee80211CapabilityInformation" alt="" coords="5,5,205,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211CapabilityInformation-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="Ieee80211CapabilityInformation.html" title="Struct Ieee80211CapabilityInformation" alt="" coords="5,5,205,32">
+</map>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">CFPollRequest</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">CFPollable</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">ESS</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">privacy</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">IBSS</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Capability Information field format. This field is not used
+// by the model (and is omitted from management frame formats too),
+// because its fields are related to features not supported by this model
+// (PCF, privacy, and beacons in ad-hoc mode). It is only provided here
+// for completeness.
+//
+</span><span style="color: #800000; font-weight: bold; ">struct</span><span style="color: #000000; "> </span><span style="color: #000000; ">Ieee80211CapabilityInformation</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">ESS</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">IBSS</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">CFPollable</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">CFPollRequest</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">privacy</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

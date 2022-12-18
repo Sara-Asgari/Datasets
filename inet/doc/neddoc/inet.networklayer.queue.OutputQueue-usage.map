@@ -1,0 +1,8 @@
+<area shape="rect" href="inet.networklayer.queue.OutputQueue.html" title="Module Interface OutputQueue" alt="" coords="499,80,597,107">
+<area shape="rect" href="inet.linklayer.ethernet.EthernetInterface.html" title="Compound Module EthernetInterface" alt="" coords="5,5,125,32">
+<area shape="rect" href="inet.linklayer.ethernet.EthernetInterface2.html" title="Compound Module EthernetInterface2" alt="" coords="149,5,275,32">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterface.html" title="Compound Module PPPInterface" alt="" coords="299,5,395,32">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithDLDuplicatesGenerator.html" title="Compound Module PPPInterfaceWithDLDuplicatesGenerator" alt="" coords="419,5,677,32">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithDLThruputMeter.html" title="Compound Module PPPInterfaceWithDLThruputMeter" alt="" coords="701,5,917,32">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithULDropsGenerator.html" title="Compound Module PPPInterfaceWithULDropsGenerator" alt="" coords="941,5,1173,32">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithULThruputMeter.html" title="Compound Module PPPInterfaceWithULThruputMeter" alt="" coords="1197,5,1413,32">

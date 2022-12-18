@@ -1,0 +1,5 @@
+<area shape="rect" href="inet.linklayer.ppp.ThruputMeter.html" title="Simple Module ThruputMeter" alt="" coords="399,80,495,107">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithDLThruputMeter.html" title="Compound Module PPPInterfaceWithDLThruputMeter" alt="" coords="5,5,221,32">
+<area shape="rect" href="inet.linklayer.ppp.PPPInterfaceWithULThruputMeter.html" title="Compound Module PPPInterfaceWithULThruputMeter" alt="" coords="245,5,461,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestDebug.html" title="Network REDTestDebug" alt="" coords="485,5,595,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestTh.html" title="Network REDTestTh" alt="" coords="619,5,704,32">

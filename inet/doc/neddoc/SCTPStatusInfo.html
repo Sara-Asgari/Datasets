@@ -1,0 +1,174 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>SCTPStatusInfo</i></h2>
+<b>File: <a href="src-transport-contract-SCTPCommand.msg.html">src/transport/contract/SCTPCommand.msg</a></b><br/><p><a href="../doxy/class_s_c_t_p_status_info.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Sent with message kind SCTP_I_STATUS, in response to command SCTP_C_STATUS.
+For explanation of variables, see RFC 793 or SCTPStateVariables in
+SCTPConnection.h.</p>
+<p><b>See also:</b> <a href="TcpStatusInd.html">TcpStatusInd</a>, <a href="TcpCommandCode.html">TcpCommandCode</a>, SCTPMain</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="SCTPStatusInfo-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="SCTPStatusInfo.html" title="Class SCTPStatusInfo" alt="" coords="5,5,117,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="SCTPStatusInfo-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="SCTPStatusInfo.html" title="Class SCTPStatusInfo" alt="" coords="7,80,119,107">
+<area shape="rect" href="SCTPCommand.html" title="Class SCTPCommand" alt="" coords="5,5,120,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="SCTPCommand.html">SCTPCommand</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Control info for <a href="inet.transport.sctp.SCTP.html">SCTP</a> connections. This class is to be set as control info
+(see cMessage::setControlInfo()) on all messages exchanged between <a href="inet.transport.sctp.SCTP.html">SCTP</a> and
+application, in both directions. Some commands and indications
+(SCTP_C_OPEN_xxx, SCTP_I_STATUS) use subclasses.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">sid</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">lifetime</td>
+   <td width="100">
+      <i>
+double</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">pathId</td>
+   <td width="100">
+      <i>
+IPvXAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">numMsgs</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">state</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">ssn</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">gate</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">assocId</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>identifies the socket within the application</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">stateName</td>
+   <td width="100">
+      <i>
+string</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">sendUnordered</td>
+   <td width="100">
+      <i>
+unsigned short</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">active</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">localAddr</td>
+   <td width="100">
+      <i>
+IPvXAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">remoteAddr</td>
+   <td width="100">
+      <i>
+IPvXAddress</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Sent with message kind SCTP_I_STATUS, in response to command SCTP_C_STATUS.
+// For explanation of variables, see RFC 793 or SCTPStateVariables in
+// SCTPConnection.h.
+//
+// </span><span style="color: #000080; ">@see</span><span style="color: #808080; font-style: italic; "> TcpStatusInd, TcpCommandCode, SCTPMain
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">SCTPStatusInfo</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">SCTPCommand</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">state</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">stateName</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPvXAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">pathId</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">active</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

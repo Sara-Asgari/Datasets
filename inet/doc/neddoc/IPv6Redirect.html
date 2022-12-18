@@ -1,0 +1,112 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>IPv6Redirect</i></h2>
+<b>File: <a href="src-networklayer-icmpv6-IPv6NDMessage.msg.html">src/networklayer/icmpv6/IPv6NDMessage.msg</a></b><br/><p><a href="../doxy/class_i_pv6_redirect.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Redirect Message Format
+RFC 2461 Section 4.5</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="IPv6Redirect-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="IPv6Redirect.html" title="Packet IPv6Redirect" alt="" coords="5,5,99,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="IPv6Redirect-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="IPv6Redirect.html" title="Packet IPv6Redirect" alt="" coords="16,80,109,107">
+<area shape="rect" href="IPv6NDMessage.html" title="Packet IPv6NDMessage" alt="" coords="5,5,120,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="IPv6NDMessage.html">IPv6NDMessage</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Neighbour Discovery for <a href="inet.networklayer.ipv6.IPv6.html">IPv6</a>.
+RFC 2461</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">destinationAddress</td>
+   <td width="100">
+      <i>
+IPv6Address</i>
+   </td>
+   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">code</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>customize=true;</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">type</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>int code; //TODO: this should be specific to different <a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> types.</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">targetLinkLayerAddress</td>
+   <td width="100">
+      <i>
+MACAddress</i>
+   </td>
+   <td>
+<p>Possible Options</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">targetAddress</td>
+   <td width="100">
+      <i>
+IPv6Address</i>
+   </td>
+   <td>
+<p>Additional <a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> fields</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Redirect Message Format
+// RFC 2461 Section 4.5
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">IPv6Redirect</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">IPv6NDMessage</span><span style="color: #000000; ">
+{
+    </span><span style="color: #808080; font-style: italic; ">//Additional ICMP fields
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">IPv6Address</span><span style="color: #000000; "> </span><span style="color: #000000; ">targetAddress</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPv6Address</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationAddress</span><span style="color: #000000; ">;
+
+    </span><span style="color: #808080; font-style: italic; ">//Possible Options
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">MACAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">targetLinkLayerAddress</span><span style="color: #000000; ">;
+        </span><span style="color: #808080; font-style: italic; ">//Redirected Header Encapsulated Msg
+</span><span style="color: #000000; ">}
+</span></pre>
+   </body>
+</html>

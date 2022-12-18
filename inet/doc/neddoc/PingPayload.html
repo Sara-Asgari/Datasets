@@ -1,0 +1,71 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>PingPayload</i></h2>
+<b>File: <a href="src-applications-pingapp-PingPayload.msg.html">src/applications/pingapp/PingPayload.msg</a></b><br/><p><a href="../doxy/class_ping_payload.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Represents payload in an <a href="inet.networklayer.ipv4.ICMP.html">ICMP</a>/<a href="inet.networklayer.icmpv6.ICMPv6.html">ICMPv6</a> Echo Request/Reply.</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="PingPayload-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="PingPayload.html" title="Packet PingPayload" alt="" coords="5,5,99,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="PingPayload-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="PingPayload.html" title="Packet PingPayload" alt="" coords="5,5,99,32">
+</map>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">seqNo</td>
+   <td width="100">
+      <i>
+long</i>
+   </td>
+   <td>
+<p>sequence number</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">data</td>
+   <td width="100">
+      <i>
+unsigned char[]</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">originatorId</td>
+   <td width="100">
+      <i>
+long</i>
+   </td>
+   <td>
+<p>sender module id</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Represents payload in an ICMP/ICMPv6 Echo Request/Reply.
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">PingPayload</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">originatorId</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// sender module id
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">seqNo</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// sequence number
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">char</span><span style="color: #000000; "> </span><span style="color: #000000; ">data</span><span style="color: #000000; ">[];
+}
+
+</span></pre>
+   </body>
+</html>

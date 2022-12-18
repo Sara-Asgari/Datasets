@@ -1,0 +1,143 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>ICMPv6Message</i></h2>
+<b>File: <a href="src-networklayer-icmpv6-ICMPv6Message.msg.html">src/networklayer/icmpv6/ICMPv6Message.msg</a></b><br/><p><a href="../doxy/class_i_c_m_pv6_message.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Represents an <a href="inet.networklayer.icmpv6.ICMPv6.html">ICMPv6</a> packet.</p>
+<p>Notes:
+   1. number of octets excluding the error datagram that is usually appended
+      in optInfo, i.e. the Type|CODE|CHECKSUM|UNUSED/POINTER/MTU/OTHER
+      as defined in RFC2463
+   2. Any <a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> type with MSB set, i.e. &gt;=128 is an Informational <a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> message</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="ICMPv6Message-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="ICMPv6Message.html" title="Packet ICMPv6Message" alt="" coords="5,5,123,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="ICMPv6Message-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="ICMPv6Message.html" title="Packet ICMPv6Message" alt="" coords="613,5,731,32">
+<area shape="rect" href="ICMPv6DestUnreachableMsg.html" title="Packet ICMPv6DestUnreachableMsg" alt="" coords="5,80,195,107">
+<area shape="rect" href="ICMPv6EchoReplyMsg.html" title="Packet ICMPv6EchoReplyMsg" alt="" coords="219,80,371,107">
+<area shape="rect" href="ICMPv6EchoRequestMsg.html" title="Packet ICMPv6EchoRequestMsg" alt="" coords="395,80,563,107">
+<area shape="rect" href="ICMPv6PacketTooBigMsg.html" title="Packet ICMPv6PacketTooBigMsg" alt="" coords="587,80,757,107">
+<area shape="rect" href="ICMPv6ParamProblemMsg.html" title="Packet ICMPv6ParamProblemMsg" alt="" coords="781,80,957,107">
+<area shape="rect" href="ICMPv6TimeExceededMsg.html" title="Packet ICMPv6TimeExceededMsg" alt="" coords="981,80,1157,107">
+<area shape="rect" href="IPv6NDMessage.html" title="Packet IPv6NDMessage" alt="" coords="1181,80,1296,107">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="ICMPv6DestUnreachableMsg.html">ICMPv6DestUnreachableMsg</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Notes:
+  1. As defined in RFC2463: Section 3</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="ICMPv6EchoReplyMsg.html">ICMPv6EchoReplyMsg</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p><a href="inet.networklayer.icmpv6.ICMPv6.html">ICMPv6</a> Echo Reply packet. Data is attached through encapsulation (see <a href="inet.networklayer.icmpv6.ICMPv6.html">ICMPv6</a>.cc)</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="ICMPv6EchoRequestMsg.html">ICMPv6EchoRequestMsg</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p><a href="inet.networklayer.icmpv6.ICMPv6.html">ICMPv6</a> Echo Request packet (RFC2463: Section 4).
+Data is attached through encapsulation (see <a href="inet.networklayer.icmpv6.ICMPv6.html">ICMPv6</a>.cc)</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="ICMPv6PacketTooBigMsg.html">ICMPv6PacketTooBigMsg</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="ICMPv6ParamProblemMsg.html">ICMPv6ParamProblemMsg</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="ICMPv6TimeExceededMsg.html">ICMPv6TimeExceededMsg</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="IPv6NDMessage.html">IPv6NDMessage</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Neighbour Discovery for <a href="inet.networklayer.ipv6.IPv6.html">IPv6</a>.
+RFC 2461</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">type</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>int code; //TODO: this should be specific to different <a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> types.</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Represents an ICMPv6 packet.
+//
+// Notes:
+//    1. number of octets excluding the error datagram that is usually appended
+//       in optInfo, i.e. the Type|CODE|CHECKSUM|UNUSED/POINTER/MTU/OTHER
+//       as defined in RFC2463
+//    2. Any ICMP type with MSB set, i.e. &gt;=128 is an Informational ICMP message
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">ICMPv6Message</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">type</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@enum</span><span style="color: #000000; ">(</span><span style="color: #000000; ">ICMPv6Type</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">//int code; //TODO: this should be specific to different ICMP types.
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   </body>
+</html>

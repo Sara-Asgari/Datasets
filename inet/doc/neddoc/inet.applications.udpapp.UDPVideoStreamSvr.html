@@ -1,0 +1,145 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>UDPVideoStreamSvr</i></h2>
+<b>Package:</b> inet.applications.udpapp<br/><b>File: <a href="src-applications-udpapp-UDPVideoStreamSvr.ned.html">src/applications/udpapp/UDPVideoStreamSvr.ned</a></b><br/><p><a href="../doxy/class_u_d_p_video_stream_svr.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Video stream server. To be used with <a href="inet.applications.udpapp.UDPVideoStreamCli.html">UDPVideoStreamCli</a>.</p>
+<p>The server will wait for incoming "video streaming requests".
+When a request arrives, it draws a random video stream size
+using the videoSize parameter, and starts streaming to the client.
+During streaming, it will send UDP packets of size packetLen at every
+waitInterval, until videoSize is reached. The parameters packetLen
+and waitInterval can be set to constant values to create CBR traffic,
+or to random values (e.g. waitInterval=uniform(1e-6, 1.01e-6)) to
+accomodate jitter.</p>
+<p>The server can serve several clients, and several streams per client.</p>
+<p><b>See also:</b> <a href="inet.applications.udpapp.UDPVideoStreamCli.html">UDPVideoStreamCli</a></p>
+<img src="inet.applications.udpapp.UDPVideoStreamSvr-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.applications.udpapp.UDPVideoStreamSvr.html" title="UDPVideoStreamSvr" alt="UDPVideoStreamSvr" coords="0,0,177,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.applications.udpapp.UDPVideoStreamSvr-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.applications.udpapp.UDPVideoStreamSvr.html" title="Simple Module UDPVideoStreamSvr" alt="" coords="5,5,147,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.applications.udpapp.UDPVideoStreamSvr-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.applications.udpapp.UDPVideoStreamSvr.html" title="Simple Module UDPVideoStreamSvr" alt="" coords="5,80,147,107">
+<area shape="rect" href="inet.applications.udpapp.UDPApp.html" title="Module Interface UDPApp" alt="" coords="40,5,112,32">
+</map>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">serverPort</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>port to listen on</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">waitInterval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>interval between sending video stream packets</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">packetLen</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr class="local">
+   <td width="150">videoSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/app</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">udpIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">udpOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Video stream server. To be used with UDPVideoStreamCli.
+//
+// The server will wait for incoming &quot;video streaming requests&quot;.
+// When a request arrives, it draws a random video stream size
+// using the videoSize parameter, and starts streaming to the client.
+// During streaming, it will send \UDP packets of size packetLen at every
+// waitInterval, until videoSize is reached. The parameters packetLen
+// and waitInterval can be set to constant values to create CBR traffic,
+// or to random values (e.g. waitInterval=uniform(1e-6, 1.01e-6)) to
+// accomodate jitter.
+//
+// The server can serve several clients, and several streams per client.
+//
+// </span><span style="color: #000080; ">@see</span><span style="color: #808080; font-style: italic; "> UDPVideoStreamCli
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">UDPVideoStreamSvr</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">like</span><span style="color: #000000; "> </span><span style="color: #000000; ">UDPApp</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">serverPort</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// port to listen on
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">volatile</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">waitInterval</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;s&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// interval between sending video stream packets
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">volatile</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">packetLen</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;B&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">volatile</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">videoSize</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;B&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/app&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">udpIn</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">UDPControlInfo</span><span style="color: #000000; ">/</span><span style="color: #000000; ">up</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">udpOut</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">UDPControlInfo</span><span style="color: #000000; ">/</span><span style="color: #000000; ">down</span><span style="color: #000000; ">);
+}
+
+</span></pre>
+   </body>
+</html>

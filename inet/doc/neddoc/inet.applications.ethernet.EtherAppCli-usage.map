@@ -1,0 +1,4 @@
+<area shape="rect" href="inet.applications.ethernet.EtherAppCli.html" title="Simple Module EtherAppCli" alt="" coords="169,80,260,107">
+<area shape="rect" href="inet.nodes.ethernet.EtherHost.html" title="Compound Module EtherHost" alt="" coords="5,5,85,32">
+<area shape="rect" href="inet.nodes.ethernet.EtherHost2.html" title="Compound Module EtherHost2" alt="" coords="109,5,195,32">
+<area shape="rect" href="inet.examples.wireless.throughput.ThroughputClient.html" title="Compound Module ThroughputClient" alt="" coords="219,5,336,32">

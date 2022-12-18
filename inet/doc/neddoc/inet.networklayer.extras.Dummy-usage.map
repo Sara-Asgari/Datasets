@@ -1,0 +1,4 @@
+<area shape="rect" href="inet.networklayer.extras.Dummy.html" title="Simple Module Dummy" alt="" coords="136,80,208,107">
+<area shape="rect" href="inet.nodes.inet.FailedRouter.html" title="Compound Module FailedRouter" alt="" coords="5,5,99,32">
+<area shape="rect" href="inet.nodes.mpls.LDP_FAILED.html" title="Compound Module LDP_FAILED" alt="" coords="123,5,221,32">
+<area shape="rect" href="inet.nodes.mpls.RSVP_FAILED.html" title="Compound Module RSVP_FAILED" alt="" coords="245,5,355,32">

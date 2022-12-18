@@ -1,0 +1,124 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>EtherAppSrv</i></h2>
+<b>Package:</b> inet.applications.ethernet<br/><b>File: <a href="src-applications-ethernet-EtherAppSrv.ned.html">src/applications/ethernet/EtherAppSrv.ned</a></b><br/><p><a href="../doxy/class_ether_app_srv.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Server side of the EtherCli model -- generates <a href="EtherAppResp.html">EtherAppResp</a> packets
+with the number of bytes requested by the client in <a href="EtherAppReq.html">EtherAppReq</a>.
+It should be connected directly to <a href="inet.linklayer.ethernet.EtherLLC.html">EtherLLC</a> or a Ieee802NicXXX module.</p>
+<img src="inet.applications.ethernet.EtherAppSrv-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.applications.ethernet.EtherAppSrv.html" title="EtherAppSrv" alt="EtherAppSrv" coords="0,0,124,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.applications.ethernet.EtherAppSrv-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.applications.ethernet.EtherAppSrv.html" title="Simple Module EtherAppSrv" alt="" coords="52,80,145,107">
+<area shape="rect" href="inet.nodes.ethernet.EtherHost.html" title="Compound Module EtherHost" alt="" coords="5,5,85,32">
+<area shape="rect" href="inet.nodes.ethernet.EtherHost2.html" title="Compound Module EtherHost2" alt="" coords="109,5,195,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.applications.ethernet.EtherAppSrv-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.applications.ethernet.EtherAppSrv.html" title="Simple Module EtherAppSrv" alt="" coords="5,5,99,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="inet.nodes.ethernet.EtherHost.html">EtherHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>An example host with one Ethernet port and traffic generators that
+generate Ethernet traffic directly. This host model does not contain
+higher layer protocols (IP, TCP).</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.nodes.ethernet.EtherHost2.html">EtherHost2</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Example host model with one Ethernet port and several traffic generators
+to create traffic in the test network.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">registerSAP</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>whether to sent IEEE802CTRL_REGISTER_DSAP on startup</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/app</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">in</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">out</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Server side of the EtherCli model -- generates EtherAppResp packets
+// with the number of bytes requested by the client in EtherAppReq.
+// It should be connected directly to EtherLLC or a Ieee802NicXXX module.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">EtherAppSrv</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">registerSAP</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// whether to sent IEEE802CTRL_REGISTER_DSAP on startup
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/app&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">in</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">Ieee802Ctrl</span><span style="color: #000000; ">/</span><span style="color: #000000; ">up</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">out</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">Ieee802Ctrl</span><span style="color: #000000; ">/</span><span style="color: #000000; ">down</span><span style="color: #000000; ">);
+}
+</span></pre>
+   </body>
+</html>

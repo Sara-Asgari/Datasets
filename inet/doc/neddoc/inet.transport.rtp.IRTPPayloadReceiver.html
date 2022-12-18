@@ -1,0 +1,67 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Module Interface <i>IRTPPayloadReceiver</i></h2>
+<b>Package:</b> inet.transport.rtp<br/><b>File: <a href="src-transport-rtp-RTPPayloadReceiver.ned.html">src/transport/rtp/RTPPayloadReceiver.ned</a></b><br/>
+<p>Interface for RTP Payload Receivers.</p>
+<p>These modules are internal to the <a href="inet.transport.rtp.RTP.html">RTP</a> module; instances are created
+and connected dynamically by <a href="inet.transport.rtp.RTPProfile.html">RTPProfile</a>.</p>
+<img src="inet.transport.rtp.IRTPPayloadReceiver-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.transport.rtp.IRTPPayloadReceiver.html" title="IRTPPayloadReceiver" alt="IRTPPayloadReceiver" coords="0,0,293,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.transport.rtp.IRTPPayloadReceiver-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.transport.rtp.IRTPPayloadReceiver.html" title="Module Interface IRTPPayloadReceiver" alt="" coords="5,5,149,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.transport.rtp.IRTPPayloadReceiver-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.transport.rtp.IRTPPayloadReceiver.html" title="Module Interface IRTPPayloadReceiver" alt="" coords="399,5,543,32">
+<area shape="rect" href="inet.transport.rtp.RTPAVProfilePayload10Receiver.html" title="Simple Module RTPAVProfilePayload10Receiver" alt="" coords="5,80,213,107">
+<area shape="rect" href="inet.transport.rtp.RTPAVProfilePayload32Receiver.html" title="Simple Module RTPAVProfilePayload32Receiver" alt="" coords="237,80,445,107">
+<area shape="rect" href="inet.transport.rtp.RTPAVProfileSampleBasedAudioReceiver.html" title="Simple Module RTPAVProfileSampleBasedAudioReceiver" alt="" coords="469,80,731,107">
+<area shape="rect" href="inet.transport.rtp.RTPPayloadReceiver.html" title="Simple Module RTPPayloadReceiver" alt="" coords="755,80,896,107">
+</map>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">outputFileName</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Interface for \RTP Payload Receivers.
+//
+// These modules are internal to the RTP module; instances are created
+// and connected dynamically by RTPProfile.
+//
+</span><span style="color: #800000; font-weight: bold; ">moduleinterface</span><span style="color: #000000; "> </span><span style="color: #000000; ">IRTPPayloadReceiver</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">outputFileName</span><span style="color: #000000; ">;
+
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">profileIn</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">RTPInnerPacket</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">profileOut</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">RTPInnerPacket</span><span style="color: #000000; ">);
+}
+
+</span></pre>
+   </body>
+</html>

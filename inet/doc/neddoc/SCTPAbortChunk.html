@@ -1,0 +1,70 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Message <i>SCTPAbortChunk</i></h2>
+<b>File: <a href="src-transport-sctp-SCTPMessage.msg.html">src/transport/sctp/SCTPMessage.msg</a></b><br/><p><a href="../doxy/class_s_c_t_p_abort_chunk.html" target="mainframe"><b>C++ definition</b></a></p>
+<p>(no description)</p><h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="SCTPAbortChunk-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="SCTPAbortChunk.html" title="Message SCTPAbortChunk" alt="" coords="5,5,128,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="SCTPAbortChunk-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="SCTPAbortChunk.html" title="Message SCTPAbortChunk" alt="" coords="5,80,128,107">
+<area shape="rect" href="SCTPChunk.html" title="Message SCTPChunk" alt="" coords="21,5,112,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="SCTPChunk.html">SCTPChunk</a>
+      <i> (message)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">chunkType</td>
+   <td width="100">
+      <i>
+uint8</i>
+   </td>
+   <td>
+<p>Chunk Type</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">T_Bit</td>
+   <td width="100">
+      <i>
+bool</i>
+   </td>
+   <td>
+<p>Chunk Flags</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">message</span><span style="color: #000000; "> </span><span style="color: #000000; ">SCTPAbortChunk</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">SCTPChunk</span><span style="color: #000000; ">
+{
+    </span><span style="color: #808080; font-style: italic; ">// Chunk Flags
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">T_Bit</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

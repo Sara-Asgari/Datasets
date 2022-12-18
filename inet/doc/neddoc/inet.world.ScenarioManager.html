@@ -1,0 +1,243 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>ScenarioManager</i></h2>
+<b>Package:</b> inet.world<br/><b>File: <a href="src-world-ScenarioManager.ned.html">src/world/ScenarioManager.ned</a></b><br/><p><a href="../doxy/class_scenario_manager.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p><a href="inet.world.ScenarioManager.html">ScenarioManager</a> is for setting up and controlling simulation experiments.
+You can schedule certain events to take place at specified times,
+like changing a parameter value, changing the bit error rate of
+a connection, removing or adding connections, removing or
+adding routes in a routing table, etc, so that you can observe the
+transient behaviour.</p>
+<p><a href="inet.world.ScenarioManager.html">ScenarioManager</a> executes a script specified in XML. It has a few
+built-in commands, while other commands are dispatched to be carried out
+by given simple modules. (The C++ class of these simple modules' needs
+to implement the IScriptable interface, and the processCommand() method
+must be redefined accordingly).</p>
+<p>An example script:</p>
+<p><pre>
+&lt;scenario&gt;
+    &lt;set-param t="10" module="host[1].mobility" par="speed" value="5"/&gt;
+    &lt;set-param t="20" module="host[1].mobility" par="speed" value="30"/&gt;
+    &lt;at t="50"&gt;
+        &lt;set-param module="host[2].mobility" par="speed" value="10"/&gt;
+        &lt;set-param module="host[3].mobility" par="speed" value="10"/&gt;
+    &lt;/at&gt;
+&lt;/scenario&gt;
+</pre></p>
+<p>Built-in commands: &lt;set-param&gt;, &lt;set-channel-attr&gt;, &lt;at&gt;.</p>
+<p>All commands have a t attribute which carries the simulation time
+at which the command has to be carried out. You can group several commands
+to be carried out at the same simulation time using &lt;at&gt;, and
+then only the &lt;at&gt; command is needed to have a t attribute.</p>
+<p>Supported attributes:</p>
+  <ul><ul><li>&lt;set-param&gt;: module, par, value.</li>
+  <li>&lt;set-channel-attr&gt;: src-module, src-gate, attr, value.</li></ul></ul>
+<img src="inet.world.ScenarioManager-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.world.ScenarioManager.html" title="ScenarioManager" alt="ScenarioManager" coords="0,0,140,24">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.world.ScenarioManager-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.world.ScenarioManager.html" title="Simple Module ScenarioManager" alt="" coords="475,80,597,107">
+<area shape="rect" href="inet.examples.mpls.ldp.LDPTEST.html" title="Network LDPTEST" alt="" coords="5,5,83,32">
+<area shape="rect" href="inet.examples.adhoc.mobility.MobileNet.html" title="Network MobileNet" alt="" coords="107,5,187,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTest.html" title="Network REDTest" alt="" coords="211,5,283,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestDebug.html" title="Network REDTestDebug" alt="" coords="307,5,416,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestTh.html" title="Network REDTestTh" alt="" coords="440,5,525,32">
+<area shape="rect" href="inet.examples.mpls.testte_tunnel.RSVPTE4.html" title="Network RSVPTE4" alt="" coords="549,5,629,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.world.ScenarioManager-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.world.ScenarioManager.html" title="Simple Module ScenarioManager" alt="" coords="5,5,128,32">
+</map>
+<h3 class="subtitle">Networks:</h3>
+<table>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.ldp.LDPTEST.html">LDPTEST</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.adhoc.mobility.MobileNet.html">MobileNet</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.inet.redtest.REDTest.html">REDTest</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.inet.redtest.REDTestDebug.html">REDTestDebug</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.inet.redtest.REDTestTh.html">REDTestTh</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_failure.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_failure2.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_reroute.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_routing.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_tunnel.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">script</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/control_s</i></td>
+   <td></td>
+</tr>
+<tr>
+   <td width="150">labels</td>
+   <td width="100"><i>node</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// ScenarioManager is for setting up and controlling simulation experiments.
+// You can schedule certain events to take place at specified times,
+// like changing a parameter value, changing the bit error rate of
+// a connection, removing or adding connections, removing or
+// adding routes in a routing table, etc, so that you can observe the
+// transient behaviour.
+//
+// ScenarioManager executes a script specified in XML. It has a few
+// built-in commands, while other commands are dispatched to be carried out
+// by given simple modules. (The C++ class of these simple modules' needs
+// to implement the IScriptable interface, and the processCommand() method
+// must be redefined accordingly).
+//
+// An example script:
+//
+// </span><span style="color: #800000; ">&lt;pre&gt;</span><span style="color: #808080; font-style: italic; ">
+// &lt;scenario&gt;
+//     &lt;set-param t=&quot;10&quot; module=&quot;host[1].mobility&quot; par=&quot;speed&quot; value=&quot;5&quot;/&gt;
+//     &lt;set-param t=&quot;20&quot; module=&quot;host[1].mobility&quot; par=&quot;speed&quot; value=&quot;30&quot;/&gt;
+//     </span><span style="color: #800000; ">&lt;at t=&quot;50&quot;&gt;</span><span style="color: #808080; font-style: italic; ">
+//         &lt;set-param module=&quot;host[2].mobility&quot; par=&quot;speed&quot; value=&quot;10&quot;/&gt;
+//         &lt;set-param module=&quot;host[3].mobility&quot; par=&quot;speed&quot; value=&quot;10&quot;/&gt;
+//     </span><span style="color: #800000; ">&lt;/at&gt;</span><span style="color: #808080; font-style: italic; ">
+// &lt;/scenario&gt;
+// </span><span style="color: #800000; ">&lt;/pre&gt;</span><span style="color: #808080; font-style: italic; ">
+//
+// Built-in commands: &lt;set-param&gt;, &lt;set-channel-attr&gt;, </span><span style="color: #800000; ">&lt;at&gt;</span><span style="color: #808080; font-style: italic; ">.
+//
+// All commands have a t attribute which carries the simulation time
+// at which the command has to be carried out. You can group several commands
+// to be carried out at the same simulation time using </span><span style="color: #800000; ">&lt;at&gt;</span><span style="color: #808080; font-style: italic; ">, and
+// then only the </span><span style="color: #800000; ">&lt;at&gt;</span><span style="color: #808080; font-style: italic; "> command is needed to have a t attribute.
+//
+// Supported attributes:
+//    - &lt;set-param&gt;: module, par, value.
+//    - &lt;set-channel-attr&gt;: src-module, src-gate, attr, value.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">ScenarioManager</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">xml</span><span style="color: #000000; "> </span><span style="color: #000000; ">script</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/control_s&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">node</span><span style="color: #000000; ">,</span><span style="color: #000000; ">mpls</span><span style="color: #000000; ">-</span><span style="color: #000000; ">node</span><span style="color: #000000; ">);
+}
+
+
+</span></pre>
+   </body>
+</html>

@@ -1,0 +1,129 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Channel <i>NormalPath</i></h2>
+<b>Package:</b> inet.examples.inet.tcpsack<br/><b>File: <a href="examples-inet-tcpsack-tcpSack.ned.html">examples/inet/tcpsack/tcpSack.ned</a></b><br/><p>(no description)</p><img src="inet.examples.inet.tcpsack.NormalPath-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.examples.inet.tcpsack.NormalPath.html" title="NormalPath" alt="NormalPath" coords="0,268,183,308">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.inet.tcpsack.NormalPath-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.examples.inet.tcpsack.NormalPath.html" title="Channel NormalPath" alt="" coords="5,80,93,107">
+<area shape="rect" href="inet.examples.inet.tcpsack.tcpSack.html" title="Network tcpSack" alt="" coords="13,5,85,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.inet.tcpsack.NormalPath-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.examples.inet.tcpsack.NormalPath.html" title="Channel NormalPath" alt="" coords="20,80,108,107">
+<area shape="rect" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="" coords="5,5,123,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="ned.DatarateChannel.html">DatarateChannel</a>
+      <i> (channel)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Networks:</h3>
+<table>
+<tr>
+   <td>
+      <a href="inet.examples.inet.tcpsack.tcpSack.html">tcpSack</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">disabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">delay</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0.0565us</td>
+   <td>
+<p>propagation delay</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">datarate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">100Mbps</td>
+   <td>
+<p>bits per second; 0=infinite</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">ber</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>bit error rate (BER)</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">per</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>packet error rate (PER)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>cDatarateChannel</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">channel</span><span style="color: #000000; "> </span><span style="color: #000000; ">NormalPath</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">datarate</span><span style="color: #000000; "> = </span><span style="color: #008000; ">100</span><span style="color: #000000; ">Mbps</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">delay</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">.</span><span style="color: #008000; ">0565</span><span style="color: #000000; ">us</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// 10m
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">per</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">ber</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+}
+</span></pre>
+   </body>
+</html>

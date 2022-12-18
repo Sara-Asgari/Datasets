@@ -1,0 +1,99 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>OSPFLSA</i></h2>
+<b>File: <a href="src-networklayer-ospfv2-OSPFPacket.msg.html">src/networklayer/ospfv2/OSPFPacket.msg</a></b><br/><p><a href="../doxy/class_o_s_p_f_l_s_a.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>common ancestor type for all LSAs</p>
+<p>class <a href="OSPFLSA.html">OSPFLSA</a> extends cObject</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFLSA-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="OSPFLSA.html" title="Class OSPFLSA" alt="" coords="25,5,108,32">
+<area shape="rect" href="OSPFLSAHeader.html" title="Class OSPFLSAHeader" alt="" coords="5,80,128,107">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFLSA-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="OSPFLSA.html" title="Class OSPFLSA" alt="" coords="272,5,355,32">
+<area shape="rect" href="OSPFASExternalLSA.html" title="Class OSPFASExternalLSA" alt="" coords="5,80,152,107">
+<area shape="rect" href="OSPFNetworkLSA.html" title="Class OSPFNetworkLSA" alt="" coords="176,80,304,107">
+<area shape="rect" href="OSPFRouterLSA.html" title="Class OSPFRouterLSA" alt="" coords="328,80,448,107">
+<area shape="rect" href="OSPFSummaryLSA.html" title="Class OSPFSummaryLSA" alt="" coords="472,80,611,107">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="OSPFASExternalLSA.html">OSPFASExternalLSA</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF AS External LSA</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="OSPFNetworkLSA.html">OSPFNetworkLSA</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF Network LSA</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="OSPFRouterLSA.html">OSPFRouterLSA</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF <a href="inet.nodes.inet.Router.html">Router</a> LSA</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="OSPFSummaryLSA.html">OSPFSummaryLSA</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Represents an OSPF Summary LSA</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">header</td>
+   <td width="100">
+      <i>
+OSPFLSAHeader</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// common ancestor type for all LSAs
+//
+//class OSPFLSA extends cObject
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFLSA</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">OSPFLSAHeader</span><span style="color: #000000; "> </span><span style="color: #000000; ">header</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

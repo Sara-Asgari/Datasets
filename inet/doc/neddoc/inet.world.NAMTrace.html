@@ -1,0 +1,176 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>NAMTrace</i></h2>
+<b>Package:</b> inet.world<br/><b>File: <a href="src-world-NAMTrace.ned.html">src/world/NAMTrace.ned</a></b><br/><p><a href="../doxy/class_n_a_m_trace.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p><a href="inet.world.NAMTrace.html">NAMTrace</a> manages a "nam" trace file which can be played back with ns2's
+Network ANimator, nam. The trace is actually written by <a href="inet.util.NAMTraceWriter.html">NAMTraceWriter</a>
+modules which should occur per host or router.</p>
+<p><b>See also:</b> <a href="inet.util.NAMTraceWriter.html">NAMTraceWriter</a></p>
+<img src="inet.world.NAMTrace-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.world.NAMTrace.html" title="NAMTrace" alt="NAMTrace" coords="0,0,95,27">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.world.NAMTrace-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.world.NAMTrace.html" title="Simple Module NAMTrace" alt="" coords="247,80,329,107">
+<area shape="rect" href="inet.examples.mpls.ldp.LDPTEST.html" title="Network LDPTEST" alt="" coords="5,5,83,32">
+<area shape="rect" href="inet.examples.sctp.nclients.NClients.html" title="Network NClients" alt="" coords="107,5,179,32">
+<area shape="rect" href="inet.examples.mpls.net37.R37.html" title="Network R37" alt="" coords="203,5,275,32">
+<area shape="rect" href="inet.examples.mpls.testte_tunnel.RSVPTE4.html" title="Network RSVPTE4" alt="" coords="299,5,379,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.world.NAMTrace-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.world.NAMTrace.html" title="Simple Module NAMTrace" alt="" coords="5,5,88,32">
+</map>
+<h3 class="subtitle">Networks:</h3>
+<table>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.ldp.LDPTEST.html">LDPTEST</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.inet.nclients.NClients.html">NClients</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.sctp.nclients.NClients.html">NClients</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.net37.R37.html">R37</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_failure.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_reroute.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_routing.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.mpls.testte_tunnel.RSVPTE4.html">RSVPTE4</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>Example network to demonstrate RSVP-TE.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">logfile</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>
+<p>the name of the logfile ("trace.nam")</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">prolog</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120">""</td>
+   <td>   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=old/floppy1</i></td>
+   <td></td>
+</tr>
+<tr>
+   <td width="150">labels</td>
+   <td width="100"><i>node</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// NAMTrace manages a &quot;nam&quot; trace file which can be played back with ns2's
+// Network ANimator, nam. The trace is actually written by NAMTraceWriter
+// modules which should occur per host or router.
+//
+// </span><span style="color: #000080; ">@see</span><span style="color: #808080; font-style: italic; "> NAMTraceWriter
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">NAMTrace</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">logfile</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// the name of the logfile (&quot;trace.nam&quot;)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">prolog</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=old/floppy1&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">node</span><span style="color: #000000; ">);
+}
+
+
+</span></pre>
+   </body>
+</html>

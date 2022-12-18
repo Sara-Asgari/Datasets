@@ -1,0 +1,99 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>Ieee80211AssociationRequestFrameBody</i></h2>
+<b>File: <a href="src-linklayer-ieee80211-mgmt-Ieee80211MgmtFrames.msg.html">src/linklayer/ieee80211/mgmt/Ieee80211MgmtFrames.msg</a></b><br/><p><a href="../doxy/class_ieee80211_association_request_frame_body.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Association request frame body format</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211AssociationRequestFrameBody-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="Ieee80211AssociationRequestFrameBody.html" title="Class Ieee80211AssociationRequestFrameBody" alt="" coords="5,80,267,107">
+<area shape="rect" href="Ieee80211SupportedRatesElement.html" title="Struct Ieee80211SupportedRatesElement" alt="" coords="27,155,245,181">
+<area shape="rect" href="Ieee80211AssociationRequestFrame.html" title="Packet Ieee80211AssociationRequestFrame" alt="" coords="20,5,252,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="Ieee80211AssociationRequestFrameBody-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="Ieee80211AssociationRequestFrameBody.html" title="Class Ieee80211AssociationRequestFrameBody" alt="" coords="12,80,273,107">
+<area shape="rect" href="Ieee80211ReassociationRequestFrameBody.html" title="Class Ieee80211ReassociationRequestFrameBody" alt="" coords="5,155,280,181">
+<area shape="rect" href="Ieee80211FrameBody.html" title="Class Ieee80211FrameBody" alt="" coords="69,5,216,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="Ieee80211FrameBody.html">Ieee80211FrameBody</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Frame body base class used to hide various frame body types</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="Ieee80211ReassociationRequestFrameBody.html">Ieee80211ReassociationRequestFrameBody</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Re-association request frame body format (same as association)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">supportedRates</td>
+   <td width="100">
+      <i>
+Ieee80211SupportedRatesElement</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">SSID</td>
+   <td width="100">
+      <i>
+string</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">bodyLength</td>
+   <td width="100">
+      <i>
+short</i>
+   </td>
+   <td>
+<p>not an actual frame field</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Association request frame body format
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">Ieee80211AssociationRequestFrameBody</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">Ieee80211FrameBody</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">bodyLength</span><span style="color: #000000; "> = </span><span style="color: #008000; ">16</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// assuming a 8-character SSID
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">SSID</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">Ieee80211SupportedRatesElement</span><span style="color: #000000; "> </span><span style="color: #000000; ">supportedRates</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

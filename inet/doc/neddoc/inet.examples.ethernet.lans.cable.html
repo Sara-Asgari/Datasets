@@ -1,0 +1,157 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Channel <i>cable</i></h2>
+<b>Package:</b> inet.examples.ethernet.lans<br/><b>File: <a href="examples-ethernet-lans-LargeNet.ned.html">examples/ethernet/lans/LargeNet.ned</a></b><br/><p>(no description)</p><img src="inet.examples.ethernet.lans.cable-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.examples.ethernet.lans.cable.html" title="cable" alt="cable" coords="0,0,142,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.ethernet.lans.cable-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.examples.ethernet.lans.cable.html" title="Channel cable" alt="" coords="107,80,179,107">
+<area shape="rect" href="inet.examples.ethernet.lans.LargeLAN.html" title="Compound Module LargeLAN" alt="" coords="5,5,83,32">
+<area shape="rect" href="inet.examples.ethernet.lans.LargeNet.html" title="Network LargeNet" alt="" coords="107,5,179,32">
+<area shape="rect" href="inet.examples.ethernet.lans.MediumLAN.html" title="Compound Module MediumLAN" alt="" coords="203,5,293,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.examples.ethernet.lans.cable-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.examples.ethernet.lans.cable.html" title="Channel cable" alt="" coords="28,80,100,107">
+<area shape="rect" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="" coords="5,5,123,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="ned.DatarateChannel.html">DatarateChannel</a>
+      <i> (channel)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="inet.examples.ethernet.lans.LargeLAN.html">LargeLAN</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Several hosts and an Ethernet hub on a switch. One port of the hub
+connect to a 10Base2 segment.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="inet.examples.ethernet.lans.MediumLAN.html">MediumLAN</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Several hosts and an Ethernet hub on a switch</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Networks:</h3>
+<table>
+<tr>
+   <td>
+      <a href="inet.examples.ethernet.lans.LargeNet.html">LargeNet</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>A large Ethernet LAN -- see model description
+<a href="largenet.html">here</a>.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">disabled</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">delay</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0.1us</td>
+   <td>
+<p>propagation delay</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">datarate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0bps</td>
+   <td>
+<p>bits per second; 0=infinite</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">ber</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>bit error rate (BER)</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td width="150">per</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>packet error rate (PER)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>cDatarateChannel</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">channel</span><span style="color: #000000; "> </span><span style="color: #000000; ">cable</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">DatarateChannel</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">delay</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">.</span><span style="color: #008000; ">1</span><span style="color: #000000; ">us</span><span style="color: #000000; ">;
+}
+
+
+</span></pre>
+   </body>
+</html>

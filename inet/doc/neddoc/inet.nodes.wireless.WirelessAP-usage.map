@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.nodes.wireless.WirelessAP.html" title="Compound Module WirelessAP" alt="" coords="200,80,291,107">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="5,155,101,181">
+<area shape="rect" href="inet.linklayer.ieee80211.Ieee80211NicAP.html" title="Compound Module Ieee80211NicAP" alt="" coords="125,155,240,181">
+<area shape="rect" href="inet.mobility.NullMobility.html" title="Simple Module NullMobility" alt="" coords="264,155,352,181">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="376,155,496,181">
+<area shape="rect" href="inet.examples.wireless.handover.HandoverNetwork.html" title="Network HandoverNetwork" alt="" coords="125,5,245,32">
+<area shape="rect" href="inet.examples.Net.html" title="Network Net" alt="" coords="269,5,341,32">

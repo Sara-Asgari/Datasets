@@ -1,0 +1,250 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>SCTPCommand</i></h2>
+<b>File: <a href="src-transport-contract-SCTPCommand.msg.html">src/transport/contract/SCTPCommand.msg</a></b><br/><p><a href="../doxy/class_s_c_t_p_command.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Control info for <a href="inet.transport.sctp.SCTP.html">SCTP</a> connections. This class is to be set as control info
+(see cMessage::setControlInfo()) on all messages exchanged between <a href="inet.transport.sctp.SCTP.html">SCTP</a> and
+application, in both directions. Some commands and indications
+(SCTP_C_OPEN_xxx, SCTP_I_STATUS) use subclasses.</p>
+<p>connId identifies the connection locally within the application (internally,
+<a href="inet.transport.sctp.SCTP.html">SCTP</a> uses the (app gate index, connId) pair to identify the socket).
+connId is to be chosen by the application in the open command.</p>
+<p><b>See also:</b> <a href="TcpCommandCode.html">TcpCommandCode</a>, <a href="TcpStatusInd.html">TcpStatusInd</a>, <a href="SCTPOpenCommand.html">SCTPOpenCommand</a>, <a href="SCTPStatusInfo.html">SCTPStatusInfo</a>, SCTPMain</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="SCTPCommand-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="SCTPCommand.html" title="Class SCTPCommand" alt="" coords="5,5,120,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="SCTPCommand-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="SCTPCommand.html" title="Class SCTPCommand" alt="" coords="540,5,655,32">
+<area shape="rect" href="SCTPConnectInfo.html" title="Class SCTPConnectInfo" alt="" coords="5,80,128,107">
+<area shape="rect" href="SCTPErrorInfo.html" title="Class SCTPErrorInfo" alt="" coords="152,80,256,107">
+<area shape="rect" href="SCTPInfo.html" title="Class SCTPInfo" alt="" coords="280,80,355,107">
+<area shape="rect" href="SCTPOpenCommand.html" title="Class SCTPOpenCommand" alt="" coords="379,80,523,107">
+<area shape="rect" href="SCTPPathInfo.html" title="Class SCTPPathInfo" alt="" coords="547,80,648,107">
+<area shape="rect" href="SCTPRcvCommand.html" title="Class SCTPRcvCommand" alt="" coords="672,80,808,107">
+<area shape="rect" href="SCTPResetInfo.html" title="Class SCTPResetInfo" alt="" coords="832,80,941,107">
+<area shape="rect" href="SCTPSendCommand.html" title="Class SCTPSendCommand" alt="" coords="965,80,1109,107">
+<area shape="rect" href="SCTPStatusInfo.html" title="Class SCTPStatusInfo" alt="" coords="1133,80,1245,107">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+cPacket   </td>
+   <td>
+      <i>(unknown -- not in documented files)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="SCTPConnectInfo.html">SCTPConnectInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Sent with message kind SCTP_I_ESTABLISHED, to let the app know
+about the local and remote <a href="inet.networklayer.ipv4.IP.html">IP</a> address and port.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPErrorInfo.html">SCTPErrorInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Currently not in use.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPInfo.html">SCTPInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPOpenCommand.html">SCTPOpenCommand</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Control info to be used for active or passive <a href="inet.transport.sctp.SCTP.html">SCTP</a> open.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPPathInfo.html">SCTPPathInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPRcvCommand.html">SCTPRcvCommand</a>
+      <i> (class)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPResetInfo.html">SCTPResetInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPSendCommand.html">SCTPSendCommand</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Control info to be used with the SEND command.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="SCTPStatusInfo.html">SCTPStatusInfo</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>Sent with message kind SCTP_I_STATUS, in response to command SCTP_C_STATUS.
+For explanation of variables, see RFC 793 or SCTPStateVariables in
+SCTPConnection.h.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">sid</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">assocId</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>identifies the socket within the application</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lifetime</td>
+   <td width="100">
+      <i>
+double</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">numMsgs</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">ssn</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">sendUnordered</td>
+   <td width="100">
+      <i>
+unsigned short</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">localAddr</td>
+   <td width="100">
+      <i>
+IPvXAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">remoteAddr</td>
+   <td width="100">
+      <i>
+IPvXAddress</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">gate</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Control info for SCTP connections. This class is to be set as control info
+// (see cMessage::setControlInfo()) on all messages exchanged between SCTP and
+// application, in both directions. Some commands and indications
+// (SCTP_C_OPEN_xxx, SCTP_I_STATUS) use subclasses.
+//
+// connId identifies the connection locally within the application (internally,
+// SCTP uses the (app gate index, connId) pair to identify the socket).
+// connId is to be chosen by the application in the open command.
+//
+// </span><span style="color: #000080; ">@see</span><span style="color: #808080; font-style: italic; "> TcpCommandCode, TcpStatusInd, SCTPOpenCommand, SCTPStatusInfo, SCTPMain
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">SCTPCommand</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">cPacket</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">assocId</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;   </span><span style="color: #808080; font-style: italic; ">// identifies the socket within the application
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">sid</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">numMsgs</span><span style="color: #000000; "> = </span><span style="color: #008000; ">1</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">ssn</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">short</span><span style="color: #000000; "> </span><span style="color: #000000; ">sendUnordered</span><span style="color: #000000; "> = </span><span style="color: #008000; ">false</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">lifetime</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">IPvXAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">localAddr</span><span style="color: #000000; "> = </span><span style="color: #000000; ">IPvXAddress</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;0.0.0.0&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #000000; ">IPvXAddress</span><span style="color: #000000; "> </span><span style="color: #000000; ">remoteAddr</span><span style="color: #000000; "> = </span><span style="color: #000000; ">IPvXAddress</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;0.0.0.0&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">gate</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

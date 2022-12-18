@@ -1,0 +1,74 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Class <i>OSPFASExternalLSA</i></h2>
+<b>File: <a href="src-networklayer-ospfv2-OSPFPacket.msg.html">src/networklayer/ospfv2/OSPFPacket.msg</a></b><br/><p><a href="../doxy/class_o_s_p_f_a_s_external_l_s_a.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Represents an OSPF AS External LSA</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFASExternalLSA-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="OSPFASExternalLSA.html" title="Class OSPFASExternalLSA" alt="" coords="32,80,179,107">
+<area shape="rect" href="OSPFASExternalLSAContents.html" title="Class OSPFASExternalLSAContents" alt="" coords="5,155,205,181">
+<area shape="rect" href="OSPFLinkStateUpdatePacket.html" title="Packet OSPFLinkStateUpdatePacket" alt="" coords="8,5,203,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="OSPFASExternalLSA-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="OSPFASExternalLSA.html" title="Class OSPFASExternalLSA" alt="" coords="5,80,152,107">
+<area shape="rect" href="OSPFLSA.html" title="Class OSPFLSA" alt="" coords="37,5,120,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="OSPFLSA.html">OSPFLSA</a>
+      <i> (class)</i>
+   </td>
+   <td>
+
+<p>common ancestor type for all LSAs</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">contents</td>
+   <td width="100">
+      <i>
+OSPFASExternalLSAContents</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">header</td>
+   <td width="100">
+      <i>
+OSPFLSAHeader</i>
+   </td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Represents an OSPF AS External LSA
+//
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFASExternalLSA</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">OSPFLSA</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000000; ">OSPFASExternalLSAContents</span><span style="color: #000000; "> </span><span style="color: #000000; ">contents</span><span style="color: #000000; ">;
+}
+
+
+</span></pre>
+   </body>
+</html>

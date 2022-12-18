@@ -1,0 +1,71 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">NED File <i>examples/labeltest/Labeltest.ned</i></h2>
+<table class="typetable">
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">////
+//// This program is free software: you can redistribute it and/or modify
+//// it under the terms of the GNU Lesser General Public License as published by
+//// the Free Software Foundation, either version 3 of the License, or
+//// (at your option) any later version.
+//// 
+//// This program is distributed in the hope that it will be useful,
+//// but WITHOUT ANY WARRANTY; without even the implied warranty of
+//// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//// GNU Lesser General Public License for more details.
+//// 
+//// You should have received a copy of the GNU Lesser General Public License
+//// along with this program.  If not, see http://www.gnu.org/licenses/.
+//// 
+//
+//package inet.examples.labeltest;
+//
+//import inet.applications.tcpapp.TCPSessionApp;
+//import inet.nodes.ethernet.EtherSwitch2;
+//import inet.examples.ethernet.lans.ethernetline;
+//import inet.networklayer.autorouting.FlatNetworkConfigurator;
+//import ned.IdealChannel;
+//import ned.DelayChannel;
+////
+//// TODO Auto-generated network
+////
+//network Labeltest
+//{
+//    @display(&quot;bgl=5;bgb=386,327&quot;);
+//    submodules:
+//        myHost: MyHost {
+//            **.port = 78;
+//            **.connectAddress = &quot;myHost1&quot;;
+//        }
+//        myHost1: MyHost {
+//            **.connectAddress = &quot;myHost2&quot;;
+//            **.port = 79;
+//        }
+//        myHost2: MyHost {
+//            **.port = 80;
+//            **.connectAddress = &quot;myHost&quot;;
+//        }
+//        etherSwitch2: EtherSwitch2;
+//        etherSwitch1: EtherSwitch2;
+//        flatNetworkConfigurator: FlatNetworkConfigurator {
+//            @display(&quot;p=311,30&quot;);
+//        }
+//    connections:
+//        myHost2.ethg &lt;--&gt; EthChannel &lt;--&gt; etherSwitch1.ethg++;
+//        etherSwitch1.ethg++ &lt;--&gt; EthChannel &lt;--&gt; etherSwitch2.ethg++;
+//        etherSwitch2.ethg++ &lt;--&gt; EthChannel &lt;--&gt; myHost.ethg;
+//        myHost1.ethg &lt;--&gt; EthChannel &lt;--&gt; etherSwitch2.ethg++;
+//}
+</span><span style="color: #800000; font-weight: bold; ">package</span><span style="color: #000000; "> </span><span style="color: #000000; ">inet</span><span style="color: #000000; ">.</span><span style="color: #000000; ">examples</span><span style="color: #000000; ">.</span><span style="color: #000000; ">labeltest</span><span style="color: #000000; ">;
+
+</span></pre>
+   </body>
+</html>

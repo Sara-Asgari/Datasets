@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.examples.ethernet.lans.MediumLAN.html" title="Compound Module MediumLAN" alt="" coords="221,80,312,107">
+<area shape="rect" href="inet.nodes.ethernet.EtherHost.html" title="Compound Module EtherHost" alt="" coords="5,155,85,181">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="109,155,205,181">
+<area shape="rect" href="inet.linklayer.ethernet.EtherHub.html" title="Simple Module EtherHub" alt="" coords="229,155,304,181">
+<area shape="rect" href="inet.examples.ethernet.lans.cable.html" title="Channel cable" alt="" coords="328,155,400,181">
+<area shape="rect" href="inet.nodes.ethernet.EtherSwitch.html" title="Compound Module EtherSwitch" alt="" coords="424,155,515,181">
+<area shape="rect" href="inet.examples.ethernet.lans.LargeNet.html" title="Network LargeNet" alt="" coords="231,5,303,32">

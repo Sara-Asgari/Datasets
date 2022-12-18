@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.examples.emulation.traceroute.Traceroute.html" title="Network Traceroute" alt="" coords="276,5,359,32">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="5,80,101,107">
+<area shape="rect" href="inet.examples.emulation.traceroute.pppline.html" title="Channel pppline" alt="" coords="125,80,197,107">
+<area shape="rect" href="inet.nodes.inet.ExtRouter.html" title="Compound Module ExtRouter" alt="" coords="221,80,301,107">
+<area shape="rect" href="inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="325,80,424,107">
+<area shape="rect" href="inet.nodes.inet.Router.html" title="Compound Module Router" alt="" coords="448,80,520,107">
+<area shape="rect" href="inet.nodes.ethernet.EtherSwitch.html" title="Compound Module EtherSwitch" alt="" coords="544,80,635,107">

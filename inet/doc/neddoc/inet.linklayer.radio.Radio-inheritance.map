@@ -1,0 +1,3 @@
+<area shape="rect" href="inet.linklayer.radio.Radio.html" title="Module Interface Radio" alt="" coords="83,5,155,32">
+<area shape="rect" href="inet.linklayer.radio.GenericRadio.html" title="Simple Module GenericRadio" alt="" coords="5,80,104,107">
+<area shape="rect" href="inet.linklayer.radio.Ieee80211Radio.html" title="Simple Module Ieee80211Radio" alt="" coords="128,80,240,107">

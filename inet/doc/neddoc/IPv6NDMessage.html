@@ -1,0 +1,153 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Packet <i>IPv6NDMessage</i></h2>
+<b>File: <a href="src-networklayer-icmpv6-IPv6NDMessage.msg.html">src/networklayer/icmpv6/IPv6NDMessage.msg</a></b><br/><p><a href="../doxy/class_i_pv6_n_d_message.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Neighbour Discovery for <a href="inet.networklayer.ipv6.IPv6.html">IPv6</a>.
+RFC 2461</p>
+<p><a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> fields inherited from <a href="ICMPv6Message.html">ICMPv6Message</a>:</p>
+  <ul><ul><li>Type</li></ul></ul>
+<p><a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> fields not implemented:</p>
+  <ul><ul><li>Checksum</li>
+  <li>Reserved</li></ul></ul>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="IPv6NDMessage-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="IPv6NDMessage.html" title="Packet IPv6NDMessage" alt="" coords="5,5,120,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="IPv6NDMessage-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="IPv6NDMessage.html" title="Packet IPv6NDMessage" alt="" coords="395,80,509,107">
+<area shape="rect" href="IPv6NeighbourAdvertisement.html" title="Packet IPv6NeighbourAdvertisement" alt="" coords="5,155,189,181">
+<area shape="rect" href="IPv6NeighbourSolicitation.html" title="Packet IPv6NeighbourSolicitation" alt="" coords="213,155,381,181">
+<area shape="rect" href="IPv6Redirect.html" title="Packet IPv6Redirect" alt="" coords="405,155,499,181">
+<area shape="rect" href="IPv6RouterAdvertisement.html" title="Packet IPv6RouterAdvertisement" alt="" coords="523,155,688,181">
+<area shape="rect" href="IPv6RouterSolicitation.html" title="Packet IPv6RouterSolicitation" alt="" coords="712,155,859,181">
+<area shape="rect" href="ICMPv6Message.html" title="Packet ICMPv6Message" alt="" coords="393,5,511,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="ICMPv6Message.html">ICMPv6Message</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Represents an <a href="inet.networklayer.icmpv6.ICMPv6.html">ICMPv6</a> packet.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="IPv6NeighbourAdvertisement.html">IPv6NeighbourAdvertisement</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Neighbour Advertisement Message Format
+RFC 2461 Section 4.4</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="IPv6NeighbourSolicitation.html">IPv6NeighbourSolicitation</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Neighbour Solicitation Message Format
+RFC 2461 Section 4.3</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="IPv6Redirect.html">IPv6Redirect</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p>Redirect Message Format
+RFC 2461 Section 4.5</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="IPv6RouterAdvertisement.html">IPv6RouterAdvertisement</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p><a href="inet.nodes.inet.Router.html">Router</a> Advertisement Message Format
+RFC 2461 Section 4.2</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="IPv6RouterSolicitation.html">IPv6RouterSolicitation</a>
+      <i> (packet)</i>
+   </td>
+   <td>
+
+<p><a href="inet.nodes.inet.Router.html">Router</a> Solicitation Message Format
+RFC 2461 Section 4.1</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">code</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>customize=true;</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">type</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>int code; //TODO: this should be specific to different <a href="inet.networklayer.ipv4.ICMP.html">ICMP</a> types.</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Neighbour Discovery for IPv6.
+// RFC 2461
+//
+// ICMP fields inherited from ICMPv6Message:
+//    - Type
+//
+// ICMP fields not implemented:
+//    - Checksum
+//    - Reserved
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">IPv6NDMessage</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">ICMPv6Message</span><span style="color: #000000; ">
+{
+    </span><span style="color: #808080; font-style: italic; ">//customize=true;
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">code</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   </body>
+</html>

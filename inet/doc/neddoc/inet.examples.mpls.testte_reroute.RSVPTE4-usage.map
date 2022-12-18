@@ -1,0 +1,7 @@
+<area shape="rect" href="inet.examples.mpls.testte_reroute.RSVPTE4.html" title="Network RSVPTE4" alt="" coords="343,5,423,32">
+<area shape="rect" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="" coords="5,80,123,107">
+<area shape="rect" href="inet.nodes.mpls.RSVP_LSR.html" title="Compound Module RSVP_LSR" alt="" coords="147,80,235,107">
+<area shape="rect" href="inet.networklayer.extras.FailureManager.html" title="Simple Module FailureManager" alt="" coords="259,80,368,107">
+<area shape="rect" href="inet.world.ScenarioManager.html" title="Simple Module ScenarioManager" alt="" coords="392,80,515,107">
+<area shape="rect" href="inet.nodes.inet.StandardHost.html" title="Compound Module StandardHost" alt="" coords="539,80,637,107">
+<area shape="rect" href="inet.world.NAMTrace.html" title="Simple Module NAMTrace" alt="" coords="661,80,744,107">

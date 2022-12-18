@@ -1,0 +1,12 @@
+<area shape="rect" href="inet.world.ChannelInstaller.html" title="Simple Module ChannelInstaller" alt="" coords="524,80,636,107">
+<area shape="rect" href="inet.examples.ospfv2.backbone.Backbone.html" title="Network Backbone" alt="" coords="5,5,85,32">
+<area shape="rect" href="inet.examples.ethernet.lans.MixedLAN.html" title="Network MixedLAN" alt="" coords="109,5,189,32">
+<area shape="rect" href="inet.examples.sctp.nclients.NClients.html" title="Network NClients" alt="" coords="213,5,285,32">
+<area shape="rect" href="inet.examples.ospfv2.areas.OSPF_AreaTest.html" title="Network OSPF_AreaTest" alt="" coords="309,5,424,32">
+<area shape="rect" href="inet.examples.ospfv2.fulltest.OSPF_TestNetwork.html" title="Network OSPF_TestNetwork" alt="" coords="448,5,584,32">
+<area shape="rect" href="inet.examples.mpls.net37.R37.html" title="Network R37" alt="" coords="608,5,680,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTest.html" title="Network REDTest" alt="" coords="704,5,776,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestDebug.html" title="Network REDTestDebug" alt="" coords="800,5,909,32">
+<area shape="rect" href="inet.examples.inet.redtest.REDTestTh.html" title="Network REDTestTh" alt="" coords="933,5,1019,32">
+<area shape="rect" href="inet.examples.inet.routerperf.RouterPerfNetwork.html" title="Network RouterPerfNetwork" alt="" coords="1043,5,1171,32">
+<area shape="rect" href="inet.examples.ospfv2.simpletest.SimpleTest.html" title="Network SimpleTest" alt="" coords="1195,5,1280,32">

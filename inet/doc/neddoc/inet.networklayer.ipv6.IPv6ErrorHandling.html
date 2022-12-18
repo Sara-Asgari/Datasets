@@ -1,0 +1,92 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>IPv6ErrorHandling</i></h2>
+<b>Package:</b> inet.networklayer.ipv6<br/><b>File: <a href="src-networklayer-ipv6-IPv6ErrorHandling.ned.html">src/networklayer/ipv6/IPv6ErrorHandling.ned</a></b><br/><p><a href="../doxy/class_i_pv6_error_handling.html" target="mainframe"><b>C++ definition</b></a></p>
+
+<p>Handles error notifications that arrive from other protocol modules.</p>
+<p>Errors arrive in messages; this implementation just prints a report
+and discards the message.</p>
+<p><a href="inet.networklayer.ipv6.IPv6.html">IPv6</a> implementation
+TODO: This is just a quick fix. We should have only ONE error handling
+module for both versions of <a href="inet.networklayer.ipv4.IP.html">IP</a>.-WEI</p>
+<img src="inet.networklayer.ipv6.IPv6ErrorHandling-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="inet.networklayer.ipv6.IPv6ErrorHandling.html" title="IPv6ErrorHandling" alt="IPv6ErrorHandling" coords="0,0,141,24">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.networklayer.ipv6.IPv6ErrorHandling-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="inet.networklayer.ipv6.IPv6ErrorHandling.html" title="Simple Module IPv6ErrorHandling" alt="" coords="5,80,128,107">
+<area shape="rect" href="inet.nodes.ipv6.NetworkLayer6.html" title="Compound Module NetworkLayer6" alt="" coords="13,5,120,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="inet.networklayer.ipv6.IPv6ErrorHandling-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="inet.networklayer.ipv6.IPv6ErrorHandling.html" title="Simple Module IPv6ErrorHandling" alt="" coords="5,5,128,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="inet.nodes.ipv6.NetworkLayer6.html">NetworkLayer6</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Represents an <a href="inet.networklayer.ipv6.IPv6.html">IPv6</a> network layer (L3).</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>i=block/sink_s</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">in</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Handles error notifications that arrive from other protocol modules.
+//
+// Errors arrive in messages; this implementation just prints a report
+// and discards the message.
+//
+// IPv6 implementation
+// TODO: This is just a quick fix. We should have only ONE error handling
+// module for both versions of IP.-WEI
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">IPv6ErrorHandling</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/sink_s&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">in</span><span style="color: #000000; ">;
+}
+</span></pre>
+   </body>
+</html>

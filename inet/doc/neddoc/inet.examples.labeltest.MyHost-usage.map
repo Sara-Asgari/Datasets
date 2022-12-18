@@ -1,0 +1,9 @@
+<area shape="rect" href="inet.examples.labeltest.MyHost.html" title="Compound Module MyHost" alt="" coords="476,5,548,32">
+<area shape="rect" href="inet.networklayer.common.InterfaceTable.html" title="Simple Module InterfaceTable" alt="" coords="5,80,104,107">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="128,80,224,107">
+<area shape="rect" href="inet.linklayer.ethernet.EthernetInterface2.html" title="Compound Module EthernetInterface2" alt="" coords="248,80,373,107">
+<area shape="rect" href="inet.nodes.inet.NetworkLayer.html" title="Compound Module NetworkLayer" alt="" coords="397,80,496,107">
+<area shape="rect" href="inet.applications.tcpapp.TCPSessionApp.html" title="Simple Module TCPSessionApp" alt="" coords="520,80,635,107">
+<area shape="rect" href="inet.networklayer.ipv4.RoutingTable.html" title="Simple Module RoutingTable" alt="" coords="659,80,755,107">
+<area shape="rect" href="inet.transport.tcp.TCP.html" title="Simple Module TCP" alt="" coords="779,80,851,107">
+<area shape="rect" href="inet.base.NotificationBoard.html" title="Simple Module NotificationBoard" alt="" coords="875,80,995,107">
